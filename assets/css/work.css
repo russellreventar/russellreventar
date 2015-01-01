@@ -45,7 +45,7 @@
 		/*height: 100%;*/ 
 	}
 	.worktile >.overlay{
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.7);
 		opacity: 0;
 		-webkit-transition: opacity .25s ease-in-out;
 	    -moz-transition: opacity .25s ease-in-out;

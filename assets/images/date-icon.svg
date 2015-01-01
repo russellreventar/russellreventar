@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>date-icon</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="icons-black" sketch:type="MSArtboardGroup" transform="translate(-245.000000, -46.000000)">
-            <g id="date-icon" sketch:type="MSLayerGroup" transform="translate(245.000000, 46.000000)">
-                <rect id="Rectangle-221" fill="#979797" sketch:type="MSShapeGroup" x="0" y="2.133687" width="28" height="26.7849337" rx="4"></rect>
-                <rect id="Rectangle-227" fill="#FFFFFF" sketch:type="MSShapeGroup" x="1.16666667" y="12.7751724" width="25.6666667" height="13.8648276" rx="4"></rect>
-                <rect id="Rectangle-223" fill="#979797" sketch:type="MSShapeGroup" x="1.16666667" y="14.32" width="25.6666667" height="10.08" rx="4"></rect>
-                <rect id="Rectangle-222" fill="#FFFFFF" sketch:type="MSShapeGroup" x="1.16666667" y="10.5351724" width="25.6666667" height="11.6248276" rx="4"></rect>
-                <rect id="Rectangle-229" fill="#CDCDCD" sketch:type="MSShapeGroup" x="5" y="0" width="5" height="7" rx="7"></rect>
-                <rect id="Rectangle-228" fill="#CDCDCD" sketch:type="MSShapeGroup" x="18" y="0" width="5" height="7" rx="7"></rect>
+        <g id="icons-black" sketch:type="MSArtboardGroup" transform="translate(-280.000000, -48.000000)">
+            <g id="date-icon" sketch:type="MSLayerGroup" transform="translate(280.000000, 48.000000)">
+                <path d="M0,6.00670248 C0,2.6892923 2.68475771,0 6.00670248,0 L21.9932975,0 C25.3107077,0 28,2.68475771 28,6.00670248 L28,21.9932975 C28,25.3107077 25.3152423,28 21.9932975,28 L6.00670248,28 C2.6892923,28 0,25.3152423 0,21.9932975 L0,6.00670248 Z M1,9.94054221 L27,9.94054221 L27,22.6233428 C27,24.8295379 25.2129147,26.6180124 22.9944797,26.6180124 L5.00552025,26.6180124 C2.7933325,26.6180124 1,24.833231 1,22.6233428 L1,9.94054221 Z" id="Rectangle-221" fill="#979797" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle" fill="#FF8484" sketch:type="MSShapeGroup" x="1" y="1" width="26" height="9"></rect>
             </g>
         </g>
     </g>
