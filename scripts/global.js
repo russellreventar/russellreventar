@@ -1,56 +1,55 @@
 $(document).ready(function(){
-console.log("hi");
-// particlesJS("footer", {
-// 	particles: {
-// 		color: "#454545",
-// 		shape: "circle",
-// 		opacity: 1,
-// 		size: 1,
-// 		size_random: false,
-// 		nb: 30,
-// 		line_linked: {
-// 			enable_auto: !0,
-// 			distance: 300,
-// 			color: "#3B3B3B",
-// 			opacity: .6,
-// 			width: 1,
-// 			condensed_mode: {
-// 				enable: !1,
-// 				rotateX: 600,
-// 				rotateY: 600
-// 			}
-// 		},
-// 		anim: {
-// 			enable: true,
-// 			speed: 0.5
-// 		}
-// 	},
-// 	interactivity: {
-// 		enable: !1,
-// 		mouse: {
-// 			distance: 200
-// 		},
-// 		mode: "grab"
-// 	},
-// 	retina_detect: true
-// });
+
+particlesJS("footer", {
+	particles: {
+		color: "#454545",
+		shape: "circle",
+		opacity: 1,
+		size: 1,
+		size_random: false,
+		nb: 30,
+		line_linked: {
+			enable_auto: !0,
+			distance: 300,
+			color: "#3B3B3B",
+			opacity: .6,
+			width: 1,
+			condensed_mode: {
+				enable: !1,
+				rotateX: 600,
+				rotateY: 600
+			}
+		},
+		anim: {
+			enable: true,
+			speed: 0.5
+		}
+	},
+	interactivity: {
+		enable: !1,
+		mouse: {
+			distance: 200
+		},
+		mode: "grab"
+	},
+	retina_detect: true
+});
 
 
 	
 
 	//when core is done loading load entries
-	var currPage = getCurentFileName();
-		console.log(currPage);
-	if(currPage == "index" || currPage == "index.html"){
-		console.log(currPage);
-	}else if(currPage == "work" || currPage == "work.html" ){
-		console.log(currPage);
+	var currSection = getSectionName();
+
+	if(currSection == "index" || currSection == "index.html"){
+
+	}else if(currSection == "work" || currSection == "work.html" ){
 		initNav(1);
-	}else if(currPage == "music" || currPage == "music.html"){
+	}else if(currSection == "music" || currSection == "music.html"){
 		initNav(2);
-	}else if(currPage == "videos" || currPage == "videos.html"){
+	}else if(currSection == "videos" || currSection == "videos.html"){
 		initNav(3);
-	}else if(currPage == "about" || currPage == "about.html"){
+	}else if(currSection == "about" || currSection == "about.html"){
 		initNav(0);
 		$('#aboutme').css("color","#199AE8");
 		$('.contactme').click(function(){window.location = 'mailto:russell.reventar@gmail.com?subject=Hello!'});
@@ -59,6 +58,14 @@ console.log("hi");
 	}
 });
 
+function getSectionName(){
+	var index = 2;
+	var section = $(location).attr('pathname');
+	section.indexOf(index);
+	section.toLowerCase();
+	section = section.split("/")[index];
+	return section;
+}
 function getCurentFileName(){
     var pagePathName= window.location.pathname;
     return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);

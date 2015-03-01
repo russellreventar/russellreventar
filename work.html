@@ -10,148 +10,44 @@ title: work
 		</div>
 		<div class="tileContainer">
 		<div class="grid">
-		    <div class="row">
-		    	<div class="one-third column m-bottom-40">
-			    	<a href="work/mastermind"> 
+			{% assign sorted-pages = (site.pages | sort: 'datecompleted') %}
+			{% assign projects = (sorted-pages | where:'category','work')%}
+			{% assign colCount=0 %}
+			{% for p in projects %}
+
+				{% if colCount == 3 %}
+					<div class="row">
+				{% endif %}
+				<div class="one-third column m-bottom-40">
+			    	<a href="work/{{p.title}}"> 
 				    <div class = "worktile">
-				    	<img src="res/images/mastermind-tile.png">
+				    	<img src="{{p.thumbnail}}">
 						<div class="infobar">
 							<ul>
-								<li><span>Mastermind</span></li>
+								<li><span>{{p.title}}</span></li>
 								<li>
 								<img src="res/images/clock-icon.svg">
-								<span>Dec 14,2013</span>
+								<span>{{p.datecompletedStr}}</span>
 								</li>
 								<li>
-								<img src="res/images/iphone-icon.svg">
-								<span>IOS</span>
+								<img src="{{p.platform-icon}}">
+								<span>{{p.platform}}</span>
 								</li>
 							</ul>
 						</div>
 						<div class="overlay">
-							<h1>Mastermind</h1>
+							<h1>{{p.title}}</h1>
 						</div>
 					</div>
 				    </a>
 				</div>
-				<div class="one-third column m-bottom-40">
-					<a href=""> 
-				    <div class = "worktile">
-				    	<img src="res/images/minibizi-tile.png">
-						<div class="infobar">
-							<ul>
-								<li><span>minibizi</span></li>
-								<li>
-								<img src="res/images/clock-icon.svg">
-								<span>Dec 20,2014</span>
-								</li>
-								<li>
-								<img src="res/images/web-icon.svg">
-								<span>WEB</span>
-								</li>
-							</ul>
-						</div>
-						<div class="overlay">
-							<h1>Mastermind</h1>
-						</div>
-					</div>
-				    </a>
-			    </div>
-			    <div class="one-third column m-bottom-40">
-					<a href=""> 
-				    <div class = "worktile">
-				    	<img src="res/images/minibizi-tile.png">
-						<div class="infobar">
-							<ul>
-								<li><span>minibizi</span></li>
-								<li>
-								<img src="res/images/clock-icon.svg">
-								<span>Dec 20,2014</span>
-								</li>
-								<li>
-								<img src="res/images/web-icon.svg">
-								<span>WEB</span>
-								</li>
-							</ul>
-						</div>
-						<div class="overlay">
-							<h1>Mastermind</h1>
-						</div>
-					</div>
-				    </a>
-			    </div>
-			</div>
-		    <div class="row">
-		    	<div class="one-third column m-bottom-40">
-			    	<a href=""> 
-				    <div class = "worktile">
-				    	<img src="res/images/mastermind-tile.png">
-						<div class="infobar">
-							<ul>
-								<li><span>Mastermind</span></li>
-								<li>
-								<img src="res/images/clock-icon.svg">
-								<span>Dec 14,2013</span>
-								</li>
-								<li>
-								<img src="res/images/iphone-icon.svg">
-								<span>IOS</span>
-								</li>
-							</ul>
-						</div>
-						<div class="overlay">
-							<h1>Mastermind</h1>
-						</div>
-					</div>
-				    </a>
+			{% if colCount == 3 %}
 				</div>
-				<div class="one-third column m-bottom-40">
-					<a href=""> 
-				    <div class = "worktile">
-				    	<img src="res/images/minibizi-tile.png">
-						<div class="infobar">
-							<ul>
-								<li><span>minibizi</span></li>
-								<li>
-								<img src="res/images/clock-icon.svg">
-								<span>Dec 20,2014</span>
-								</li>
-								<li>
-								<img src="res/images/web-icon.svg">
-								<span>WEB</span>
-								</li>
-							</ul>
-						</div>
-						<div class="overlay">
-							<h1>Mastermind</h1>
-						</div>
-					</div>
-				    </a>
-			    </div>
-			    <div class="one-third column m-bottom-40">
-					<a href=""> 
-				    <div class = "worktile">
-				    	<img src="res/images/minibizi-tile.png">
-						<div class="infobar">
-							<ul>
-								<li><span>minibizi</span></li>
-								<li>
-								<img src="res/images/clock-icon.svg">
-								<span>Dec 20,2014</span>
-								</li>
-								<li>
-								<img src="res/images/web-icon.svg">
-								<span>WEB</span>
-								</li>
-							</ul>
-						</div>
-						<div class="overlay">
-							<h1>Mastermind</h1>
-						</div>
-					</div>
-				    </a>
-			    </div>
-			</div>
+				{% assign colCount=0%} 
+			{% else %} 
+				{% assign colCount=colCount | plus:1 %}   
+			{% endif %}
+		{% endfor %}
 		</div>
-		</div>
-		</div>
+	</div>
+</div>
