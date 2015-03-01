@@ -1,0 +1,208 @@
+.descriptor{
+	width:80%;
+	max-width: 700px;
+	margin:0px auto 20px auto;
+	border-left: 10px solid #d48574;
+}
+.descriptor p{
+	font-family: ProximaLight;
+	color:#606060;
+	font-size:17px;
+	letter-spacing: 0.3px;
+	line-height: 1.5;
+	word-spacing: 1px;
+	margin-left: 20px;
+	margin-bottom: 60px;
+}
+
+.tileContainer{
+	width:80%;
+	margin: 0 auto;
+	position: relative;
+}
+.grid {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.worktile{
+	width:100%;
+	height: 0;	
+	 -ms-box-sizing: border-box; 
+	 -o-box-sizing: border-box; 
+	 -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    border-top-left-radius:10px;
+     border-top-right-radius:10px;
+     overflow: hidden; 
+     cursor: pointer;
+     position: relative;
+}
+	.worktile > img{
+		width: 100%;
+		height: 100%;
+	}
+	.worktile >.overlay{
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		-webkit-transition: opacity .25s ease-in-out;
+	    -moz-transition: opacity .25s ease-in-out;
+	    -ms-transition: opacity .25s ease-in-out;
+	    -o-transition: opacity .25s ease-in-out;
+	    transition: opacity .25s ease-in-out;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.worktile >.overlay h1{
+		font-family: 'Nothing You Could Do', cursive;
+		margin-top: 25%;
+		width:100%;
+		text-align: center;
+		color:#F2F1ED;
+		pointer-events: none;
+		position:absolute;
+		font-size: 20px;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		opacity: 0;
+	}
+	.worktile:hover > .overlay h1{
+		font-size: 22px;
+	}
+	.worktile:hover > .overlay{
+		opacity: 1;
+	}
+
+.infobar{
+	width:100%;
+	height:42px;
+	background-color: white;
+	bottom:0;
+	position: absolute;
+	z-index: 2;
+}
+	.infobar ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0px 10px;
+	    text-decoration: none;
+	    margin: 13px auto;  
+	}
+	.infobar li {
+		text-decoration: none;
+	    display: inline;
+	}
+		.infobar li:first-child {
+			font-family: proximaLight;
+			font-size: 16px;
+			font-weight: 300;
+			color: #4a4a4a;
+			text-transform: uppercase;	
+			letter-spacing: 2px;
+		}
+		.infobar li:nth-child(2),
+		.infobar li:nth-child(3) {
+			font-family: proximaLight;
+			font-size: 10px;
+			font-weight: 300;
+			color: #717171;
+			text-transform: uppercase;	
+			float: right;
+			margin-left: 6px;
+		}
+		.infobar li:nth-child(2) span,
+		.infobar li:nth-child(3) span{
+			vertical-align: middle;
+		}
+		.infobar li:nth-child(2) img{
+			width: 20px;
+			height: 16px;
+		}
+		.infobar li:nth-child(3) img{
+			height: 16px;
+		}
+
+@media screen and (max-width: 400px){
+
+	.wrap{
+		width:90%;
+	}
+	.tileContainer{
+		width: 80%;
+	}
+	.infobar{
+		opacity: 1;
+	}
+	.descriptor{
+		width:100%;
+		border-left: 8px solid #d48574;
+	}
+}
+@media screen and (min-width:401px) and (max-width:450px){
+	.wrap{
+		width:90%;
+	}
+	.descriptor{
+		width:90%;
+		border-left: 8px solid #d48574;
+	}
+	
+}
+
+@media screen and (min-width:451px) and (max-width:550px){
+	.wrap{
+		width:90%;
+	}
+	.descriptor{
+		width:90%;
+		border-left: 8px solid #d48574;
+	}
+	.tileContainer{
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px){
+
+	.tileContainer{
+		width: 100%;
+	}
+	.infobar{
+		opacity:0;
+	}
+	.wrap{
+		width:80%;
+	}
+	.descriptor{
+		width:90%;
+		border-left: 8px solid #d48574;
+	}
+	.worktile > .overlay h1{
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 701px) and (max-width: 1100px){
+	.tileContainer{
+		width: 95%;
+	}
+	.wrap{
+		width:90%;
+	}
+	.infobar li:nth-child(2){
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1920px){
+	
+}
+
+@media screen and (min-width: 1921px){
+
+}
+

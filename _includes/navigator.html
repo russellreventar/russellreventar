@@ -1,0 +1,33 @@
+<div id = "navigator">
+	<div class = "aboutme">
+		<a href="about">About Me</a>
+	</div>
+	<div class = "wmv">
+		<div class = "sections">
+			<div class = "col-3" id = "work">
+				{% if page.url == "/work.html" %}
+					<img src="{{site.baseurl}}/res/images/compass-icon-active.svg">
+				{% else %}
+					<img src="{{site.baseurl}}/res/images/compass-icon.svg">
+				{% endif %}
+			</div>
+			<div class = "col-3" id = "music">
+				{% if page.url == "/music.html" %}
+					<img src="{{site.baseurl}}/res/images/guitar-icon-active.svg">
+				{% else %}
+					<img src="{{site.baseurl}}/res/images/guitar-icon.svg">
+				{% endif %}
+			</div>
+			<div class = "col-3" id = "videos">
+				{% if page.url == "/videos.html" %}
+					<img src="{{site.baseurl}}/res/images/camera-icon-active.svg">
+				{% else %}
+					<img src="{{site.baseurl}}/res/images/camera-icon.svg">
+				{% endif %}
+			</div>
+		</div>
+	<div class = "switcher">
+		<div class="indicator"></div>
+	</div>
+	</div>
+</div>

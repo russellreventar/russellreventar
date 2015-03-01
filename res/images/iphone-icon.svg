@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="33px" viewBox="0 0 18 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>iphone-icon</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dotted-line-2" sketch:type="MSArtboardGroup" transform="translate(-449.000000, -436.000000)" fill="#98BBE3">
+            <path d="M450.997673,436.794872 C449.894388,436.794872 449,437.684323 449,438.795514 L449,466.204486 C449,467.30941 449.89513,468.205128 450.997673,468.205128 L464.565964,468.205128 C465.669248,468.205128 466.563636,467.315677 466.563636,466.204486 L466.563636,438.795514 C466.563636,437.69059 465.668506,436.794872 464.565964,436.794872 L450.997673,436.794872 Z M450.835007,441.895683 L450.835007,462.56739 L464.72863,462.56739 L464.72863,441.895683 L450.835007,441.895683 Z M457.591354,466.726218 C458.315244,466.726218 458.902073,466.125242 458.902073,465.383899 C458.902073,464.642557 458.315244,464.041581 457.591354,464.041581 C456.867464,464.041581 456.280635,464.642557 456.280635,465.383899 C456.280635,466.125242 456.867464,466.726218 457.591354,466.726218 Z M455.291452,439.211045 L455.291452,439.747973 L460.272185,439.747973 L460.272185,439.211045 L455.291452,439.211045 Z" id="iphone-icon" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

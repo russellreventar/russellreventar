@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>clock-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="512" sketch:type="MSArtboardGroup" transform="translate(-243.000000, -256.000000)" fill="#404040">
+            <g id="clock-icon" sketch:type="MSLayerGroup" transform="translate(243.000000, 256.000000)">
+                <path d="M25.8363636,12.9358974 C25.8363636,5.79193079 20.0530294,0 12.9181818,0 C5.78333423,0 0,5.79193079 0,12.9358974 C0,20.0798641 5.78333423,25.8717949 12.9181818,25.8717949 C20.0530294,25.8717949 25.8363636,20.0798641 25.8363636,12.9358974 Z M2,12.9358974 C2,6.89583583 6.88856928,2 12.9181818,2 C18.9477944,2 23.8363636,6.89583583 23.8363636,12.9358974 C23.8363636,18.975959 18.9477944,23.8717949 12.9181818,23.8717949 C6.88856928,23.8717949 2,18.975959 2,12.9358974 Z" id="Oval-47" sketch:type="MSShapeGroup"></path>
+                <path d="M13.8438312,6.54166667 L13.8438312,6.04166667 L12.8438312,6.04166667 L12.8438312,6.54166667 L12.8438312,12.5096154 L12.8438312,13.0096154 L13.8438312,13.0096154 L13.8438312,12.5096154 L13.8438312,6.54166667 Z" id="Line" sketch:type="MSShapeGroup"></path>
+                <path d="M17.0385413,15.3146336 L17.466956,15.5724337 L17.9825562,14.7156045 L17.5541416,14.4578043 L13.8756852,12.2442794 L13.4472706,11.9864793 L12.9316703,12.8433085 L13.360085,13.1011087 L17.0385413,15.3146336 Z" id="Line-3" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
