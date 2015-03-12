@@ -5,30 +5,30 @@
 }
 @font-face{
 	font-family: Andale;
-	src: url(../resources/fonts/Andale-Mono.ttf);
+	src: url(../res/fonts/Andale-Mono.ttf);
 }
 @font-face{
 	font-family: FuturaBook;
-	src: url(../resources/fonts/FuturaLT-Book.ttf);
+	src: url(../res/fonts/FuturaLT-Book.ttf);
 }
 @font-face{
 	font-family: FuturaHeavy;
-	src: url(../resources/fonts/FuturaLT-Heavy.ttf);
+	src: url(../res/fonts/FuturaLT-Heavy.ttf);
 }
 
 @font-face{
 	font-family: FuturaLight;
-	src: url(../resources/fonts/FuturaLT-Light.ttf);
+	src: url(../res/fonts/FuturaLT-Light.ttf);
 }
 
 @font-face{
 	font-family: FuturaLT;
-	src: url(../resources/fonts/FuturaLT.ttf);
+	src: url(../res/fonts/FuturaLT.ttf);
 }
 
 @font-face{
 	font-family: OptimaLight;
-	src: url(../resources/fonts/OptimaNovaLT-Light.otf);
+	src: url(../res/fonts/OptimaNovaLT-Light.otf);
 }
 
 @font-face{
@@ -36,6 +36,11 @@
 	src: url(../res/fonts/ProximaNova-Light.otf);
 }
 
+ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 /* -----------  HTML TAGS  ---------- */
 
 html,body{
@@ -347,7 +352,7 @@ h1,h2{
 	top:0;left:0;
 }
 .mapBG{
-	background: url('../resources/images/blackearth3.png') no-repeat center center;
+	background: url('../res/images/blackearth.png') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }

@@ -163,11 +163,15 @@
 	}
 	.tileContainer{
 		width: 70%;
+		max-width: 302px;
 	}
 }
 
 @media screen and (min-width: 550px) and (max-width: 700px){
-
+	.worktile{
+		border-top-left-radius:0px;
+    	border-top-right-radius:0px;
+	}
 	.tileContainer{
 		width: 100%;
 	}

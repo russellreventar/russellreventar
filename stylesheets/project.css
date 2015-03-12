@@ -1,0 +1,68 @@
+.title{
+	font-family: Futura;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: #8EC3FF;
+}
+.subtitle{
+	font-family: ProximaLight;
+	font-style: italic;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #787878;
+
+}
+.screenshots{
+	width:90%;
+	background-color: white;
+
+}
+.screenshots img{
+	width:80px;
+}
+.info {
+	font-family: ProximaLight;
+	font-size: 12px;
+	color: #787878;
+	height: 17px;
+	width: 300px;
+	margin: 0 auto;
+}
+.info ul {
+		height: 100%;
+	    list-style-type: none;
+	    text-decoration: none;
+	}
+.info li {
+		text-decoration: none;
+	    display: inline;
+	    margin-left: 50px;
+	    line-height: 18px;
+	}
+	.info li:nth-child(1){
+		text-transform: uppercase;
+		margin-left: 0;
+	}
+
+		.info li img{
+			height: 100%;
+			margin-top: -2px;
+		}
+		.info li .label{
+		}
+.bar{
+	width:5px;
+	height: 50px;
+	background-color: #8EC3FF;
+	left:-5px;
+	position: absolute;
+}
+.description{
+	color: #616161;
+	line-height: 20px;
+	font-family: ProximaLight;
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
