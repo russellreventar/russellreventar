@@ -111,25 +111,17 @@ $(document).ready(function(){
 	addParticles(devParticleOptions);
 	addParticles(artParticleOptions);
 	
-
-
-	
-
-
-
-	
-	// $(".col:nth-child(1)").click(function() { 
-	// 	setTimeout(function(){window.location = "work.html";}, 100);
-
- //   	}); 
+	$(".col:nth-child(1)").click(function() { 
+		window.location = "work";
+   	}); 
    	
-   	// $(".col:nth-child(2)").click(function() { 
-   	// 	window.location = "music";
-   	// }); 
+   	$(".col:nth-child(2)").click(function() { 
+   		window.location = "music";
+   	}); 
    	
-   	// $(".col:nth-child(3)").click(function() { 
-   	// 	window.location = "videos";
-   	// }); 
+   	$(".col:nth-child(3)").click(function() { 
+   		window.location = "videos";
+   	}); 
 
 	$(".col:nth-child(1)").hover(function(){
 		$('#compass-left').addClass("swingCompass-left");
