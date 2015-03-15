@@ -1,0 +1,230 @@
+
+.portraitDetails{
+	width: 100%;
+	position: relative;
+	height: 120px;
+	margin-top: 22px
+	
+}
+.portrait{
+	/* float: left; */
+	position: absolute;
+	left: 10px;
+   /*  margin-top: 10px; */
+   top:0;
+   bottom: 0;
+   margin: auto;
+    width:100px;
+    height:100px;
+	border: 3px solid white;
+	border-radius: 50%;
+	background: url("../resources/images/portrait.png") no-repeat center;
+	background-size:100% 100%;
+	behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	-moz-box-shadow:    0px -5px 5px 0px rgba(0,0,0,0.44);
+	box-shadow:         0px -5px 5px 0px rgba(0,0,0,0.44);
+}
+
+.title{
+	width:100%;
+	margin-top: 20px;
+/* 	background-color: blue; */	
+}
+.title h{
+	font-family: Futura;
+	letter-spacing: 1px;
+	color:#199AE8;
+	font-size:38px;
+}
+
+.body{
+	width:100%;
+/* 	background-color: red; */
+}
+.body p{
+	font-family: ProximaLight;
+	color:#616161;
+	font-size:16px;
+	letter-spacing: 0.3px;
+	line-height: 1.5;
+	word-spacing: 1px;
+}
+.topTitle{
+	width:100%;
+}
+.sec1{
+	width:100%;
+	margin:0 auto;
+	position: relative;
+	padding: 70px 0 0 0;
+}
+.description{
+	display:block;
+	position:relative;
+}
+.sec1 h{
+	font-family: Futura;
+	letter-spacing: 1px;
+	/* color:#414141; */
+	color:#22A39F;
+	font-size:40px;
+	position: relative;
+	float:left;
+}
+.quote{
+	font-family: 'Nothing You Could Do', cursive;
+/* 	letter-spacing: 1px; */
+	color:#757575;
+	font-size:22px;
+	text-align: center;
+	padding-top:8px;
+/* 	background-color: green; */
+}
+
+.sec2{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+}
+
+.sec2 h1{
+	font-family: Futura;
+	letter-spacing: 1px;
+	color:#414141;
+	font-size:25px;
+}
+
+.findmeLinks li{
+    display:inline;
+}
+	.findmeLinks a{
+    	display:inline-block;
+		padding:15px;
+		text-decoration: none;
+		font-family: Futura;
+		font-size: 12px;
+		color: #199AE8;
+		text-transform: uppercase;
+		-webkit-: .1s color linear;
+		-moz-: .1s color linear;
+		-ms-: .1s color linear;
+		-o-: .1s color linear;
+		transition: .1s color linear;
+		position: relative;
+	}.findmeLinks a:hover {
+		color: #000002;
+		text-shadow: none;
+	}
+
+.details{
+	/* background-color: yellow; */
+	height: 80px;
+	margin:auto;
+	position: absolute;
+	bottom:0;right:0;
+}
+.details .key{
+	 border-left: 4px solid #59bfff;
+	 padding-left: 7px;
+	 float:right;
+}
+
+.details .key li{
+   list-style-type:none;
+	padding:1px;
+	text-decoration: none;
+	position: relative;
+	 font-family: Futura;
+   font-size: 13px;
+}
+
+.details .value{
+	 padding-left: 7px;
+	 float:right;
+}
+.details .value li{
+   list-style-type:none;
+	padding:1px;
+	text-decoration: none;
+	position: relative;
+	 font-family: ProximaLight;
+   font-size: 12px;
+   color:#747474;
+   padding:3px;
+}
+.contactme{
+	font-family: futura;
+	font-size: 16px;
+	color:#2f8ce3;
+	position: absolute;
+	right: 0; bottom: 0;
+	cursor: pointer;
+}
+
+.contactme:hover {
+	color:#1bd33d;
+	
+}
+.contactme img{
+	margin-top: -2px;
+	width:22px;
+}
+.dets{
+	float:right;
+	margin-top: 23px;
+	margin-right: 30px;
+	width:200px;
+}
+.dets li{
+/* 	float:left;  */
+	padding-right: 5px;
+	font-family:Futura;
+	font-size: 13px;
+   	color:#747474;
+}
+
+/*
+.dets li:first-child{
+	list-style-type:none; 
+}
+*/
+@media screen and (max-width: 440px){
+	.body{
+		/* padding-top:50px;  */
+	}
+	.title h{
+		font-size:35px;
+	}
+	.details{
+
+	}
+	.portrait{
+		width:75px;
+		height: 75px;
+	}
+
+	.wrap80{
+		width:90%;
+	}
+	.title{
+		margin-top: 10px;
+	}
+
+}
+@media screen and (min-width: 441px) and (max-width: 500px){
+
+.title h{
+	font-size:35px;
+}
+	.details{
+		
+	}
+	.portrait{
+		width:85px;
+		height: 85px;
+	}
+}
+
+
+

@@ -11,11 +11,17 @@
 		{% include navigator.html %}
 		<div id="content" class="beigeBG">
 			<div class="wrap80">
-			<div class="title">/{{page.title}}</div>
-			<div class="subtitle">{{page.subheading}}</div>
-			<div class="screenshots">
-				<img src="{{site.baseurl}}/res/images/mastermind-screenshot-1.png">
+				<div class = "page-name">- Work -</div>
+			<div class="title">
+				<!-- <img src="{{site.baseurl}}/{{page.logo}}"> -->
+				<div class="heading">
+					<div class="name">/{{page.title}}</div>
+					<div class="description">{{page.subheading}}</div>
+				</div>
 			</div>
+			<!-- <div class="screenshots">
+				<img src="{{site.baseurl}}/{{page.screenshot-1}}">
+			</div> -->
 			<div class="info">
 				<ul>
 					<li>
@@ -41,7 +47,7 @@
 				</ul>
 			</div>
 			
-			<div class="description">
+			<div class="contentBody">
 				<div class="bar"></div>
 				{{content}}
 			</div>

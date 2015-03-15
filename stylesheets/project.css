@@ -1,11 +1,29 @@
 .title{
+	margin: 10px 0;
+	height: 70px;
+	position: relative;
+}
+.title img{
+	width:80px;
+	position: absolute;
+	margin:auto;
+	top:0; bottom:0;
+}
+.heading{
+	height: 45px;
+	position: absolute;
+	top:0; bottom: 0; left:0px;
+	margin: auto;
+}
+.name{
 	font-family: Futura;
-	font-size: 22px;
+	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	color: #8EC3FF;
 }
-.subtitle{
+.description{
+	margin-top: 3px;
 	font-family: ProximaLight;
 	font-style: italic;
 	font-size: 12px;
@@ -58,7 +76,7 @@
 	left:-5px;
 	position: absolute;
 }
-.description{
+.contentBody{
 	color: #616161;
 	line-height: 20px;
 	font-family: ProximaLight;

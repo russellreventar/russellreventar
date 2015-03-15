@@ -1,0 +1,74 @@
+<html>
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/about.css" >
+</head>
+
+<body>
+<div id = "wrapper">
+	{% include header.html %}
+	{% include navigator.html %}
+
+<div id = "content" class="beigeBG">
+
+
+		<div class = "wrap80">
+		<div class = "quote">
+			 {{page.quote}}
+		</div>
+		<div class = "portraitDetails">
+			<div class = "portrait"></div>
+			<div class = "details">
+				<div class = "value">
+					<li>{{page.fullname}}</li>
+					<li>{{page.age}}</li>
+					<li>{{page.location}}</li>
+					
+				</div>
+				<div class = "key">
+					<li>Name</li>
+					<li>Age</li>
+					<li>Location</li>
+				</div>
+				<div class="contactme" > 
+					<span>Contact</span>
+					<img src="{{site.baseurl}}/res/images/mail-icon.png">
+				</div>
+			</div>	
+		</div>
+		<div class = "title">
+			<h> About Me </h>
+		</div>
+		<div class = "body">
+			{{content}}
+		</div>
+
+		<div class = "sec2">
+			<h1> Find me on </h1>
+			<div class = "findmeLinks">
+				<li>
+					<a href="/about/about.html">
+					Instagram</a></li>
+				<li>
+					<a href="/work/">
+					Linkedin</a></li>
+				<li>
+					<a href="https://github.com/russellreventar" target = "_blank">
+					Github</a></li>
+				<li>
+					<a href="/contact/">
+					Youtube</a></li>
+				<li>
+					<a href="/contact/">
+					Twitter</a></li>
+			</div>
+
+		</div> 
+		
+    </div>
+
+</div>
+
+</div>
+
+</body>
