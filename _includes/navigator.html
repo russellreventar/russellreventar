@@ -1,25 +1,25 @@
 <div id = "navigator">
 	<div class = "aboutme">
-		<a href="{{site.baseurl/about}}">About Me</a>
+		<a href="{{site.baseurl}}/about">About Me</a>
 	</div>
 	<div class = "wmv">
 		<div class = "sections">
 			<div class = "col-3" id = "work">
-				{% if page.url == "/work.html" %}
+				{% if page.category == "work" %}
 					<img src="{{site.baseurl}}/res/images/compass-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}/res/images/compass-icon.svg">
 				{% endif %}
 			</div>
 			<div class = "col-3" id = "music">
-				{% if page.url == "/music.html" %}
+				{% if page.category == "music" %}
 					<img src="{{site.baseurl}}/res/images/guitar-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}/res/images/guitar-icon.svg">
 				{% endif %}
 			</div>
 			<div class = "col-3" id = "videos">
-				{% if page.url == "/videos.html" %}
+				{% if page.category == "videos" %}
 					<img src="{{site.baseurl}}/res/images/camera-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}/res/images/camera-icon.svg">

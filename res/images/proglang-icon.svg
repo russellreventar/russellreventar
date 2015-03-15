@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>10 + 01</title>
+    <title>proglang-icon</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-2" sketch:type="MSArtboardGroup" transform="translate(-272.000000, -405.000000)" fill="#20CF24" font-family="Prestige Elite Std" font-weight="bold">
-            <g id="10-+-01-+-Objective-C-+-IOS-Application-+-iphone-icon-+-October-22,2013---De-+-clock-icon" sketch:type="MSLayerGroup" transform="translate(100.000000, 402.314000)">
-                <g id="10-+-01-+-Objective-C" transform="translate(171.000000, 0.000000)" sketch:type="MSTextLayer">
-                    <g id="10-+-01">
-                        <text id="10" font-size="10.45" line-spacing="16">
-                            <tspan x="0" y="7">10</tspan>
+        <g id="Desktop-2" sketch:type="MSArtboardGroup" transform="translate(-426.000000, -603.000000)">
+            <g id="proglang-icon" sketch:type="MSLayerGroup" transform="translate(257.500000, 589.749000)">
+                <g id="10-+-01-+-Objective-C" transform="translate(167.000000, 0.000000)">
+                    <g id="proglang-icon" transform="translate(0.000000, 11.000000)">
+                        <text id="0" sketch:type="MSTextLayer" font-family="Krungthep" font-size="10" font-weight="bold" line-spacing="15" fill="#3DDB41">
+                            <tspan x="1" y="20">0</tspan>
                         </text>
-                        <text id="01" font-size="10" line-spacing="15">
-                            <tspan x="0.583333333" y="16.1428571">01</tspan>
+                        <text id="0" sketch:type="MSTextLayer" font-family="Krungthep" font-size="10" font-weight="bold" line-spacing="11" fill="#3DDB41">
+                            <tspan x="9" y="10">0</tspan>
                         </text>
+                        <g id="-2-+-Rectangle-213" transform="translate(0.799988, 0.000000)">
+                            <text id="-2" sketch:type="MSTextLayer" font-family="Krungthep" font-size="10" font-weight="bold" fill="#3DDB41">
+                                <tspan x="0" y="10">1</tspan>
+                            </text>
+                            <rect id="Rectangle-213" fill="#3EDA41" sketch:type="MSShapeGroup" x="1.5" y="9.251" width="3.6" height="1"></rect>
+                        </g>
+                        <g id="1-+-Rectangle-212" transform="translate(9.200012, 10.000000)">
+                            <text id="1" sketch:type="MSTextLayer" font-family="Krungthep" font-size="10" font-weight="bold" line-spacing="15" fill="#3DDB41">
+                                <tspan x="0" y="10">1</tspan>
+                            </text>
+                            <rect id="Rectangle-212" fill="#3EDA41" sketch:type="MSShapeGroup" x="1.5" y="9.251" width="3.6" height="1"></rect>
+                        </g>
                     </g>
                 </g>
             </g>
