@@ -1,39 +1,39 @@
 /*------ FONTS ------*/
 @font-face{
 	font-family: Futura;
-	src: url(../res/fonts/FuturaBQ-DemiBold.otf);
+	src: url(../fonts/FuturaBQ-DemiBold.otf);
 }
 @font-face{
 	font-family: Andale;
-	src: url(../res/fonts/Andale-Mono.ttf);
+	src: url(../fonts/Andale-Mono.ttf);
 }
 @font-face{
 	font-family: FuturaBook;
-	src: url(../res/fonts/FuturaLT-Book.ttf);
+	src: url(../fonts/FuturaLT-Book.ttf);
 }
 @font-face{
 	font-family: FuturaHeavy;
-	src: url(../res/fonts/FuturaLT-Heavy.ttf);
+	src: url(../fonts/FuturaLT-Heavy.ttf);
 }
 
 @font-face{
 	font-family: FuturaLight;
-	src: url(../res/fonts/FuturaLT-Light.ttf);
+	src: url(../fonts/FuturaLT-Light.ttf);
 }
 
 @font-face{
 	font-family: FuturaLT;
-	src: url(../res/fonts/FuturaLT.ttf);
+	src: url(../fonts/FuturaLT.ttf);
 }
 
 @font-face{
 	font-family: OptimaLight;
-	src: url(../res/fonts/OptimaNovaLT-Light.otf);
+	src: url(../fonts/OptimaNovaLT-Light.otf);
 }
 
 @font-face{
 	font-family: ProximaLight;
-	src: url(../res/fonts/ProximaNova-Light.otf);
+	src: url(../fonts/ProximaNova-Light.otf);
 }
 
 ul{
@@ -135,18 +135,19 @@ h1,h2{
 		}
 		
 #navigator{
-	padding:8px 10px 4px 0;
+	padding:12px 10px 0 0;
 	background: white;
 }
 	.aboutme{
 		text-align: right;
 		position: relative;
-		margin:0;
+		margin-top:-4px;
+		width: 60px;
+		float: right;
 	}
 		.aboutme a{
 			font-family: ProximaLight;
 			font-size: 14px;
-			color: #6D6B64;
 			/* text-transform: uppercase; */
 			-webkit-: .1s color linear;
 			-moz-: .1s color linear;
@@ -160,14 +161,21 @@ h1,h2{
 		.aboutme a:hover{	
 			color: #199AE8;
 		}
+		.aboutme-active {
+			color: #199AE8;
+		}
+		.aboutme-inactive{
+			color: #6D6B64;
+		}
 	.wmv{
 		width:	182px;
 		height:	40px;
 		margin:	0 auto;
+
 	}
 		.sections{
 			width:	100%;
-			height:	36px;
+			height:	32px;
 			margin:	0 auto;
 		}
 		.col-3{
@@ -203,13 +211,12 @@ h1,h2{
 				}
 
 #content {
-	padding-bottom: 100px; /* header height */
+	padding-bottom: 80px; /* footer height */
 }
 
 #footer{
 	width:100%;
-	/* background-color: #242424; */
-	height:100px;
+	height:80px;
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -224,7 +231,7 @@ h1,h2{
 	.con_follow{
 		width:200px;
 		height:40px;
-		margin:32px auto;
+		margin:15px auto;
 	}
 		.sec{
 			float:left;
@@ -232,42 +239,20 @@ h1,h2{
 			height:100%;
 			margin-left: 6%;
 			cursor:pointer;
+			position: relative;
 		}
 		.sec img{
 			width:100%;
 			height:100%;
+			position:absolute;
+  			left:0;
+  			-webkit-transition: opacity 0.2s ease-in-out;
+			-moz-transition: opacity 0.2s ease-in-out;
+			-o-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
 		}
-		.sec.twitter{
-			background-image: url('../res/images/twitter.svg');
-			background-repeat:no-repeat;
-			background-size:100%;
-		}
-		.sec.twitter:hover{
-			background-image: url('../res/images/twitter-sel.svg');
-		}
-		.sec.github{
-			background-image: url('../res/images/github.svg');
-			background-repeat:no-repeat;
-			background-size:100%;
-		}
-		.sec.github:hover{
-			background-image: url('../res/images/github-sel.svg');
-		}
-		.sec.instagram{
-			background-image: url('../res/images/instagram.svg');
-			background-repeat:no-repeat;
-			background-size:100%;
-		}
-		.sec.instagram:hover{
-			background-image: url('../res/images/instagram-sel.svg');
-		}
-		.sec.youtube{
-			background-image: url('../res/images/youtube.svg');
-			background-repeat:no-repeat;
-			background-size:100%;
-		}
-		.sec.youtube:hover{
-			background-image: url('../res/images/youtube-sel.svg');
+		.sec img.top:hover {
+  			opacity:0;
 		}
 
 	#footer h1{
@@ -352,7 +337,7 @@ h1,h2{
 	top:0;left:0;
 }
 .mapBG{
-	background: url('../res/images/blackearth.png') no-repeat center center;
+	background: url('../images/blackearth.png') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -721,9 +706,7 @@ h1,h2{
 }
 
 @media screen and (min-width: 701px) and (max-width: 999px){
-	.aboutme{
-		margin:0;
-	}
+
 	#desks{
 		width: 370px;
 	}
@@ -733,17 +716,13 @@ h1,h2{
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1920px){
-	.aboutme{
-		margin:0;
-	}
+
 
 }
 
 @media screen and (min-width: 1921px){
 
-	.aboutme{
-		margin:0;
-	}
+
 	.headerbg{
 		display: none;
 	}

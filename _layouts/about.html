@@ -1,7 +1,7 @@
 <html>
 <head>
 	{% include head.html %}
-	<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/about.css" >
+	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}about.css" >
 </head>
 
 <body>
@@ -10,7 +10,6 @@
 	{% include navigator.html %}
 
 <div id = "content" class="beigeBG">
-
 
 		<div class = "wrap80">
 		<div class = "quote">
@@ -32,7 +31,7 @@
 				</div>
 				<div class="contactme" > 
 					<span>Contact</span>
-					<img src="{{site.baseurl}}/res/images/mail-icon.png">
+					<img src="{{site.baseurl}}{{site.data.path.images}}mail-icon.png">
 				</div>
 			</div>	
 		</div>

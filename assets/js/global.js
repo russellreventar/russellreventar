@@ -1,39 +1,48 @@
 $(document).ready(function(){
 
-particlesJS("footer", {
-	particles: {
-		color: "#454545",
-		shape: "circle",
-		opacity: 1,
-		size: 1,
-		size_random: false,
-		nb: 30,
-		line_linked: {
-			enable_auto: !0,
-			distance: 300,
-			color: "#3B3B3B",
-			opacity: .6,
-			width: 1,
-			condensed_mode: {
-				enable: !1,
-				rotateX: 600,
-				rotateY: 600
+	// $('#work').click(function(){
+	// 	window.location = "work";
+	// });
+	// $('#music').click(function(){
+	// 	window.location = "music";
+	// });
+	// $('#videos').click(function(){
+	// 	window.location = "videos";
+	// });
+	particlesJS("footer", {
+		particles: {
+			color: "#454545",
+			shape: "circle",
+			opacity: 1,
+			size: 1,
+			size_random: false,
+			nb: 30,
+			line_linked: {
+				enable_auto: !0,
+				distance: 300,
+				color: "#3B3B3B",
+				opacity: .6,
+				width: 1,
+				condensed_mode: {
+					enable: !1,
+					rotateX: 600,
+					rotateY: 600
+				}
+			},
+			anim: {
+				enable: true,
+				speed: 0.5
 			}
 		},
-		anim: {
-			enable: true,
-			speed: 0.5
-		}
-	},
-	interactivity: {
-		enable: !1,
-		mouse: {
-			distance: 200
+		interactivity: {
+			enable: !1,
+			mouse: {
+				distance: 200
+			},
+			mode: "grab"
 		},
-		mode: "grab"
-	},
-	retina_detect: true
-});
+		retina_detect: true
+	});
 
 
 	

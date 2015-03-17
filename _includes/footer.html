@@ -1,11 +1,32 @@
 <div id="footer" {% if page.url == "/index.html" %}class="hide"{% else %} class="darkGreyBG" {% endif %}>
+	{{page.url}}
   <div class = "overlay">
-    <div class = "con_follow">
-      <a href = "/"> <div class = "sec twitter"></div></a>
-      <a href = "/"> <div class = "sec github"></div></a>
-      <a href = "/"> <div class = "sec instagram"></div></a>
-      <a href = "/"> <div class = "sec youtube"></div></a>
-    </div>    
-      <h1> Copyright &copy 2015 Russell Reventar </h1>
-  </div>
+	    <div class = "con_follow">
+		 	<a href = "/"> 
+		     	<div class = "sec twitter">
+		     		<img class="bottom"src="{{site.baseurl}}{{site.data.path.images}}twitter-sel.svg">
+		      		<img class="top"src="{{site.baseurl}}{{site.data.path.images}}twitter.svg">
+		      	</div>
+		   	</a>
+		   	<a href = "/">
+		      	<div class = "sec github">
+		      		<img class="bottom"src="{{site.baseurl}}{{site.data.path.images}}github-sel.svg">
+		      		<img class="top"src="{{site.baseurl}}{{site.data.path.images}}github.svg">
+		      	</div>
+		     </a>
+	      	<a href = "/">
+		      	<div class = "sec instagram">
+		      		<img class="bottom"src="{{site.baseurl}}{{site.data.path.images}}instagram-sel.svg">
+		      		<img class="top"src="{{site.baseurl}}{{site.data.path.images}}instagram.svg">
+		    	</div>
+			</a>
+	      	<a href = "/">
+	      		<div class = "sec youtube">
+	      			<img class="bottom"src="{{site.baseurl}}{{site.data.path.images}}youtube-sel.svg">
+		      		<img class="top"src="{{site.baseurl}}{{site.data.path.images}}youtube.svg">
+	      		</div>
+	   		</a>
+	    </div>    
+    	<h1> Copyright &copy 2015 Russell Reventar </h1>
+  	</div>
 </div>

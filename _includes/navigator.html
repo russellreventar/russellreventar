@@ -1,29 +1,36 @@
 <div id = "navigator">
-	<div class = "aboutme">
-		<a href="{{site.baseurl}}/about">About Me</a>
+	<div class="aboutme">
+		<a href="{{site.baseurl}}/about" {% if page.url == "/about/" %} class="aboutme-active" {% else %} class="aboutme-inactive"{% endif %}>About Me</a>
 	</div>
 	<div class = "wmv">
 		<div class = "sections">
 			<div class = "col-3" id = "work">
-				{% if page.category == "work" %}
-					<img src="{{site.baseurl}}/res/images/compass-icon-active.svg">
+				<a href= "{{site.baseurl}}/work">
+				{% if page.url == "/work/index.html" or page.category == "work" %}
+					<img src="{{site.baseurl}}{{site.data.path.images}}compass-icon-active.svg">
 				{% else %}
-					<img src="{{site.baseurl}}/res/images/compass-icon.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}compass-icon.svg">
 				{% endif %}
+				</a>
 			</div>
+
 			<div class = "col-3" id = "music">
+				<a href= "{{site.baseurl}}/music">
 				{% if page.category == "music" %}
-					<img src="{{site.baseurl}}/res/images/guitar-icon-active.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon-active.svg">
 				{% else %}
-					<img src="{{site.baseurl}}/res/images/guitar-icon.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon.svg">
 				{% endif %}
+				</a>
 			</div>
 			<div class = "col-3" id = "videos">
+				<a href= "{{site.baseurl}}/music">
 				{% if page.category == "videos" %}
-					<img src="{{site.baseurl}}/res/images/camera-icon-active.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon-active.svg">
 				{% else %}
-					<img src="{{site.baseurl}}/res/images/camera-icon.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon.svg">
 				{% endif %}
+				</a>
 			</div>
 		</div>
 	<div class = "switcher">

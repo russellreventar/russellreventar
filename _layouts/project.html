@@ -2,8 +2,8 @@
 <html>
 <head>
 	{% include head.html %}
-	<script src = "{{site.baseurl}}/scripts/project.js"></script>
-	<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/project.css" >
+	<script src = "{{site.baseurl}}{{site.data.path.js}}project.js"></script>
+	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}project.css" >
 </head>
 <body>
 	<div id="wrapper">
@@ -26,22 +26,22 @@
 				<ul>
 					<li>
 						{% if page.platform == "ios"%}
-							<img src = "{{site.baseurl}}/res/images/ios-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.images}}ios-icon.svg">
 						{% elsif page.platform == "web"%}
-							<img src = "{{site.baseurl}}/res/images/web-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.images}}web-icon.svg">
 						{% elsif page.platform == "java"%}
-							<img src = "{{site.baseurl}}/res/images/java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
 						{% else %}
-							<img src = "{{site.baseurl}}/res/images/java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
 						{% endif %}
 						<span>{{page.platform}}</span>
 					</li>
 					<li>
-						<img src = "{{site.baseurl}}/res/images/proglang-icon.svg">
+						<img src = "{{site.baseurl}}{{site.data.path.images}}proglang-icon.svg">
 						{{page.language}}
 					</li>
 					<li>
-						<img src = "{{site.baseurl}}/res/images/clock-icon.svg">
+						<img src = "{{site.baseurl}}{{site.data.path.images}}clock-icon.svg">
 						{{page.datecompletedStr}}
 					</li>
 				</ul>

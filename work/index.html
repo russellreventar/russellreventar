@@ -19,18 +19,18 @@ title: work
 					<div class="row">
 				{% endif %}
 				<div class="one-third column m-bottom-40">
-			    	<a href="{{p.title}}"> 
+			    	<a href="{{site.baseurl}}{{p.permalink}}">
 				    <div class = "worktile">
-				    	<img src="{{site.baseurl}}{{p.thumbnail}}">
+				    	<img src="{{site.baseurl}}{{site.data.path.images}}{{p.thumbnail}}">
 						<div class="infobar">
 							<ul>
 								<li><span>{{p.title}}</span></li>
 								<li>
-								<img src="res/images/clock-icon.svg">
+								<img src="{{site.baseurl}}{{site.data.path.images}}clock-icon.svg">
 								<span>{{p.datecompletedStr}}</span>
 								</li>
 								<li>
-								<img src="{{p.platform-icon}}">
+								<img src="{{site.baseurl}}{{site.data.path.images}}{{p.platform-icon}}">
 								<span>{{p.platform}}</span>
 								</li>
 							</ul>

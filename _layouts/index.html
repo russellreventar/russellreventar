@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}index.css" >
+	{% include head.html %}
+	<script src = "{{site.baseurl}}{{site.data.path.js}}typed.js"></script>
+	<script src = "{{site.baseurl}}{{site.data.path.js}}index.js"></script>
+
+</head>
+<body>
+	<div id="wrapper" class="mapBG">
+		<div id="welcome">
+	        <div class="split-half">
+	            <div class="canvas-wrap">
+	                <canvas id="dev-canvas"></canvas>
+	                <div class="overlay">
+	                    <img class="dev-img"
+	                    	 src="{{site.baseurl}}{{site.data.path.images}}desk-developer.svg">
+	                    <div class="dev-textCon">
+	                        <span class="dev-text"></span>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="split-half">
+	            <div class="canvas-wrap">
+	                <canvas id="art-canvas"></canvas>
+
+	                <div class="overlay">
+	                    <img class="art-img" 
+							src="{{site.baseurl}}{{site.data.path.images}}desk-arts.svg">
+	                    <div class="art-text">Art</div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="andSeparator">|</div>
+    	</div>
+    	{% include header.html %}
+		<div id="content">
+			{{content}}
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+</html>
