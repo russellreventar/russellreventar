@@ -65,11 +65,23 @@
 	}
 	.slideUp{
 		animation-name: slideUp;
-		-webkit-animation-name: slideUp;	
+		-webkit-animation-name: slideUp;
+		-moz-animation-name: slideUp;
+		-ms-animation-name: slideUp;
+		-o-animation-name: slideUp;	
+
 		animation-duration: 1s;	
 		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-ms-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		
+
 		animation-timing-function: ease;	
 		-webkit-animation-timing-function: ease;
+		-moz-animation-timing-function: ease;
+		-ms-animation-timing-function: ease;
+		-o-animation-timing-function: ease;
 		visibility: visible !important;	
 		opacity: 1;		
 	}
@@ -139,37 +151,96 @@
 		.swingCompass-left{
 			animation-name: swing-left-10;
 			-webkit-animation-name: swing-left-10;
+			-moz-animation-name: swing-left-10;
+			-ms-animation-name: swing-left-10;
+			-o-animation-name: swing-left-10;
+
 			animation-duration: 2.0s;	
 			-webkit-animation-duration: 2.0s;
+			-moz-animation-duration: 2.0s;
+			-ms-animation-duration: 2.0s;
+			-o-animation-duration: 2.0s;
+
 			animation-iteration-count: infinite;
 			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			
 			transform-origin: 50% 20%;
+			-webkit-transform-origin: 50% 20%;
+			-moz-transform-origin: 50% 20%;
+			-ms-transform-origin: 50% 20%;
+			-o-transform-origin: 50% 20%;
 		}
 		.swingCompass-right{
 			animation-name: swing-right-10;
 			-webkit-animation-name: swing-right-10;
+			-moz-animation-name: swing-right-10;
+			-ms-animation-name: swing-right-10;
+			-o-animation-name: swing-right-10;
+
 			animation-duration: 2.0s;	
 			-webkit-animation-duration: 2.0s;
+			-moz-animation-duration: 2.0s;
+			-ms-animation-duration: 2.0s;
+			-o-animation-duration: 2.0s;
+
 			animation-iteration-count: infinite;
 			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+
 			transform-origin: 50% 20%;
+			-webkit-transform-origin: 50% 20%;
+			-moz-transform-origin: 50% 20%;
+			-ms-transform-origin: 50% 20%;
+			-o-transform-origin: 50% 20%;
 		}
 		.swingGuitar{
 			animation-name: oscillate-15 ;
 			-webkit-animation-name: oscillate-15 ;
+			-moz-animation-name: oscillate-15 ;
+			-ms-animation-name: oscillate-15 ;
+			-o-animation-name: oscillate-15 ;
+
 			animation-duration: 2.0s;	
 			-webkit-animation-duration: 2.0s;
+			-moz-animation-duration: 2.0s;
+			-ms-animation-duration: 2.0s;
+			-o-animation-duration: 2.0s;
+
 			animation-iteration-count: infinite;
 			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+
 			transform-origin: 50% 70%;
+			-webkit-transform-origin: 50% 70%;
+			-moz-transform-origin: 50% 70%;
+			-ms-transform-origin: 50% 70%;
+			-o-transform-origin: 50% 70%;
 		}
 		.moveCamera{
 			animation-name: dip-10;
 			-webkit-animation-name: dip-10;
+			-moz-animation-name: dip-10;
+			-ms-animation-name: dip-10;
+			-o-animation-name: dip-10;
+
 			animation-duration: 2.0s;	
 			-webkit-animation-duration: 2.0s;
+			-moz-animation-duration: 2.0s;
+			-ms-animation-duration: 2.0s;
+			-o-animation-duration: 2.0s;
+
 			animation-iteration-count: infinite;
 			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
 		}
 		
 @media screen and (max-width: 400px){
