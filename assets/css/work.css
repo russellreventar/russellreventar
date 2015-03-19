@@ -107,14 +107,17 @@
 		.infobar li:nth-child(2),
 		.infobar li:nth-child(3) {
 			font-family: proximaLight;
-			font-size: 10px;
 			font-weight: 300;
 			color: #717171;
 			float: right;
 			margin-left: 6px;
 			margin-top: -2px;
 		}
+		.infobar li:nth-child(2){
+			font-size: 11px;
+		}
 		.infobar li:nth-child(3){
+			font-size: 10px;
 			text-transform: uppercase;
 		}
 		.infobar li:nth-child(2) span,
