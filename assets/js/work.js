@@ -1,5 +1,5 @@
 $(window).resize(function(){
-	scaleWorkTile();
+	// scaleWorkTile();
 });
 
 $(document).ready(function(){

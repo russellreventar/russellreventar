@@ -88,9 +88,9 @@
 	.infobar ul {
 	    list-style-type: none;
 	    margin: 0;
-	    padding: 0px 10px;
+	    padding: 16px 10px;
 	    text-decoration: none;
-	    margin: 13px auto;  
+	    margin: 0px auto;  
 	}
 	.infobar li {
 		text-decoration: none;
@@ -107,23 +107,25 @@
 		.infobar li:nth-child(2),
 		.infobar li:nth-child(3) {
 			font-family: proximaLight;
-			font-size: 9px;
+			font-size: 10px;
 			font-weight: 300;
 			color: #717171;
-			text-transform: uppercase;	
 			float: right;
 			margin-left: 6px;
+			margin-top: -2px;
+		}
+		.infobar li:nth-child(3){
+			text-transform: uppercase;
 		}
 		.infobar li:nth-child(2) span,
 		.infobar li:nth-child(3) span{
 			vertical-align: middle;
 		}
 		.infobar li:nth-child(2) img{
-			width: 20px;
-			height: 16px;
+			height: 15px;
 		}
 		.infobar li:nth-child(3) img{
-			height: 16px;
+			height: 15px;
 		}
 
 @media screen and (max-width: 400px){
@@ -215,7 +217,9 @@
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1920px){
-	
+	.infobar li:first-child{
+		font-size: 12px;
+	}
 }
 
 @media screen and (min-width: 1921px){
