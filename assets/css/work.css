@@ -94,7 +94,7 @@
 	}
 	.infobar li {
 		text-decoration: none;
-	    display: inline;
+	    display: inline-block;
 	}
 		.infobar li:first-child {
 			font-family: proximaLight;
