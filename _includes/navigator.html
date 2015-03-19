@@ -16,7 +16,7 @@
 
 			<div class = "col-3" id = "music">
 				<a href= "{{site.baseurl}}/music">
-				{% if page.category == "music" %}
+				{% if page.url == "/music/index.html" or page.category == "music" %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon.svg">
@@ -24,8 +24,8 @@
 				</a>
 			</div>
 			<div class = "col-3" id = "videos">
-				<a href= "{{site.baseurl}}/music">
-				{% if page.category == "videos" %}
+				<a href= "{{site.baseurl}}/videos">
+				{% if page.url == "/videos/index.html" or page.category == "videos" %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon.svg">

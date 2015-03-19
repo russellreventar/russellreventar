@@ -1,6 +1,6 @@
 ---
 layout: work
-title: work
+title: Work
 ---
 <div class = "wrap">
 		<div class = "page-name">- Work -</div>
@@ -15,7 +15,7 @@ title: work
 			{% assign colCount=0 %}
 			{% for p in projects %}
 
-				{% if colCount == 3 %}
+				{% if colCount == 0 %}
 					<div class="row">
 				{% endif %}
 				<div class="one-third column m-bottom-40">
@@ -41,13 +41,12 @@ title: work
 					</div>
 				    </a>
 				</div>
-			{% if colCount == 3 %}
-				</div>
-				{% assign colCount=0%} 
-			{% else %} 
 				{% assign colCount=colCount | plus:1 %}   
-			{% endif %}
-		{% endfor %}
+				{% if colCount == 3 %}
+					</div>
+					{% assign colCount=0%} 
+				{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </div>

@@ -1,12 +1,9 @@
 $(window).resize(function(){
 	scaleWorkTile();
-	
 });
 
 $(document).ready(function(){
-	scaleWorkTile();
-
-	
+	// scaleWorkTile();
 });
 
 function scaleWorkTile(){

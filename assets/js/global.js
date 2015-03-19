@@ -14,13 +14,13 @@ $(document).ready(function(){
 			color: "#454545",
 			shape: "circle",
 			opacity: 1,
-			size: 1,
+			size: 1.2,
 			size_random: false,
 			nb: 30,
 			line_linked: {
 				enable_auto: !0,
 				distance: 300,
-				color: "#3B3B3B",
+				color: "#4C4C4C",
 				opacity: .6,
 				width: 1,
 				condensed_mode: {
