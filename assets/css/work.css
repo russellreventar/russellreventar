@@ -125,14 +125,16 @@
 			vertical-align: middle;
 		}
 		.infobar li:nth-child(2) img{
-			height: 14px;
+			height: 15px;
 		}
 		.infobar li:nth-child(3) img{
 			height: 15px;
 		}
 
 @media screen and (max-width: 400px){
-
+	.infobar li:first-child {
+		font-size: 11px;
+	}
 	.wrap{
 		width:90%;
 	}
@@ -216,6 +218,9 @@
 	}
 	.infobar li:nth-child(2){
 		display: none;
+	}
+	.infobar li:first-child{
+		font-size: 12px;
 	}
 }
 
