@@ -132,7 +132,12 @@
 			height: 15px;
 		}
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 350px){
+	.infobar li:nth-child(2){
+		display: none;
+	}
+}
+@media screen and (max-width: 351px) and (max-width:400px){
 	.infobar li:first-child {
 		font-size: 12px;
 	}
