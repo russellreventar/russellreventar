@@ -110,7 +110,6 @@
 			font-weight: 300;
 			color: #717171;
 			float: right;
-			margin-left: 6px;
 			margin-top: -2px;
 		}
 		.infobar li:nth-child(2){
@@ -125,15 +124,17 @@
 			vertical-align: middle;
 		}
 		.infobar li:nth-child(2) img{
+			margin-left: 9px;
 			height: 15px;
 		}
 		.infobar li:nth-child(3) img{
+			margin-left: 6px;
 			height: 15px;
 		}
 
 @media screen and (max-width: 400px){
 	.infobar li:first-child {
-		font-size: 11px;
+		font-size: 12px;
 	}
 	.wrap{
 		width:90%;
