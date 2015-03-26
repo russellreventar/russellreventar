@@ -137,7 +137,7 @@
 		display: none;
 	}
 }
-@media screen and (max-width: 351px) and (max-width:400px){
+@media screen and (min-width: 351px) and (max-width:400px){
 	.infobar li:first-child {
 		font-size: 12px;
 	}

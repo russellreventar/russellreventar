@@ -30,7 +30,15 @@ title: Work
 								<span>{{p.datecompletedStr}}</span>
 								</li>
 								<li>
-								<img src="{{site.baseurl}}{{site.data.path.images}}{{p.platform-icon}}">
+										{% if p.platform == "iOS"%}
+							<img src = "{{site.baseurl}}{{site.data.path.images}}ios-icon.svg">
+						{% elsif p.platform == "Web"%}
+							<img src = "{{site.baseurl}}{{site.data.path.images}}web-icon.svg">
+						{% elsif p.platform == "Java"%}
+							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+						{% else %}
+							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+						{% endif %}
 								<span>{{p.platform}}</span>
 								</li>
 							</ul>
