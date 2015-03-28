@@ -13,13 +13,14 @@
 		<div id="content" class="beigeBG">
 			<div class="wrap">
 			<div class = "banner">
-				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.banner}}">
+				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-banner.png">
 			</div>
 			<div class="title">
-				<!-- <img src="{{site.baseurl}}/{{page.logo}}"> -->
+				<!-- <img class="logo"src="{{site.baseurl}}{{site.data.path.images}}{{page.logo}}"> -->
 				<div class="heading">
-					<div class="name">/{{page.title}}</div>
+					<div class="name">{{page.title}}</div>
 					<div class="description">{{page.description}}</div>
+					<div class="company">{{page.company}}</div>
 				</div>
 				<div class="info">
 
@@ -57,41 +58,6 @@
 				</div>
 			</div>
 			</div>
-			<!-- <div class="info">
-
-				<div class="tag">
-					<div class="tag-icon">
-						{% if page.platform == "iOS"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}ios-icon.svg">
-						{% elsif page.platform == "web"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}web-icon.svg">
-						{% elsif page.platform == "java"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
-						{% else %}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
-						{% endif %}
-					</div>
-					<div class="tag-label">
-						{{page.platform}}
-					</div>
-				</div>
-				<div class="tag">
-					<div class="tag-icon">
-						<img src = "{{site.baseurl}}{{site.data.path.images}}proglang-icon.svg">
-					</div>
-					<div class="tag-label">
-						{{page.language}}
-					</div>
-				</div>
-				<div class="tag">
-					<div class="tag-icon">
-						<img src = "{{site.baseurl}}{{site.data.path.images}}date-icon.svg">
-					</div>
-					<div class="tag-label">
-						{{page.datecompletedStr}}
-					</div>
-				</div>
-			</div> -->
 			
 			<div class="contentBody">
 				<div class="bar"></div>
