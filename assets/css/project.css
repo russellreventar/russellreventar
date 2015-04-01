@@ -1,7 +1,8 @@
 .title{
-	height: 80px;
+	height: 60px;
 	position: relative;
-	margin-top: 15px;
+	margin-top: 10px;
+	border-bottom: 1px solid #DFD6C6;
 }
 .logo{
 	float: left;
@@ -73,7 +74,7 @@
 	color: #787878;
 	height: 40px;
 	width: 300px;
-	margin: 0 auto;
+	margin: 25px auto 5px auto;
 	position: relative;
 
 }
