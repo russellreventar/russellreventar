@@ -75,7 +75,7 @@
 	width: 180px;
 	float: right;
 	position: relative;
-	float: left;
+	float: right;
 }
 .tag{
 	width:100%;
@@ -138,6 +138,28 @@
 .wrap{
 		width:80%;
 	}
+
+@media screen and (max-width: 630px){
+	.wrap{
+		width:95%;
+	}
+	.info{
+		margin-left: 0px;
+		margin-top: 10px;
+		float: left;
+	}
+	.heading{
+		width:100%;
+	}
+	.title{
+		height: 150px;
+	}
+}	
+@media screen and (min-width: 631px){
+	.heading{
+		width:350px;
+	}
+}	
 @media screen and (max-width: 350px){
 	.wrap{
 		width:95%;
@@ -163,9 +185,6 @@
 @media screen and (min-width: 550px) and (max-width: 700px){
 .wrap{
 		width:85%;
-	}
-	.info{
-		float: left;
 	}
 }
 
