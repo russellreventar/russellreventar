@@ -32,10 +32,11 @@
 	margin-right: 5px;
 }
 .title{
-	height: 60px;
+	height: 45px;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 20px;
 	border-bottom: 1px solid #DFD6C6;
+
 }
 .logo{
 	float: left;
@@ -55,6 +56,7 @@
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	color: #8EC3FF;
+	line-height: 16px;
 }
 .description{
 	margin-top: 3px;
@@ -89,7 +91,7 @@
 	margin: 0px auto;
 	position: relative;
 	border-bottom: 2px solid #6A6A6A; 
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 .banner img{
@@ -111,7 +113,7 @@
 .info {
 	/*background-color: red;*/
 	font-family: ProximaLight;
-	font-size: 12px;
+	font-size: 11px;
 	color: #787878;
 	height: 40px;
 	width: 300px;
@@ -148,7 +150,7 @@
 	/*background: #FFFFFF;
 	background-image: linear-gradient(-90deg, rgba(255,255,255,0.00) 89%, rgba(0,0,0,0.06) 100%);*/
 	float: left;
-	line-height: 20px;
+	line-height: 14px;
 	text-align: center;
     /*border-left: 1px solid #6A6A6A;*/
 }
@@ -197,6 +199,9 @@
 	text-align: center;
 	line-height: 22px;
 }
+.nextProj:hover{
+	background-color: rgb(58, 223, 91);
+}
 .nextProj h1{
 	font-family: ProximaLight;
 	font-size: 12px;
@@ -221,6 +226,7 @@
 	}
 	.banner{
 		padding-top:20px;
+		width: 90%;
 	}
 }
 @media screen and (min-width: 351px) and (max-width:500px){
@@ -232,6 +238,7 @@
 	}
 	.banner{
 		padding-top:20px;
+		width: 90%;
 	}
 }
 @media screen and (min-width:401px) and (max-width:450px){

@@ -36,6 +36,9 @@
 	src: url(../fonts/ProximaNova-Light.otf);
 }
 
+a{
+	text-decoration: none;
+}
 ul{
 	margin: 0;
 	padding: 0;
