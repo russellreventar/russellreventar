@@ -11,6 +11,17 @@
 		{% include header.html %}
 		{% include navigator.html %}
 		<div id="content" class="beigeBG">
+			<div class="projectNav">
+				<a href="">
+					<img src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
+					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
+				</a>
+					<!-- <img class="projlogo"src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png"> -->
+				<a href="">
+					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
+					<img src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
+				</a>
+			</div>
 			<div class="wrap">
 			<div class = "banner">
 				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-banner.png">
@@ -19,7 +30,10 @@
 				<!-- <img class="logo"src="{{site.baseurl}}{{site.data.path.images}}{{page.logo}}"> -->
 				<div class="heading">
 					<div class="name">{{page.title}}</div>
-					<div class="description">{{page.description}}</div>
+					<div class="description">
+						<span>{{page.description}}</span>
+						<span>{{page.date-finish-y}}</span>
+					</div>
 					<!-- <div class="company">{{page.company}}</div> -->
 				</div>
 			</div>
@@ -54,7 +68,7 @@
 						<img src = "{{site.baseurl}}{{site.data.path.images}}date-icon.svg">
 					</div>
 					<div class="tag-label">
-						{{page.datecompletedStr}}
+						{{page.date-start-m}} {{page.date-start-d}} - {{page.date-finish-m}} {{page.date-finish-d}}
 					</div>
 				</div>
 			</div>
