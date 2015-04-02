@@ -33,7 +33,7 @@
 					<div class="name">{{page.title}}</div>
 					<div class="description">
 						<span>{{page.description}}</span>
-						<span>{{page.date-finish-y}}</span>
+						<span>{{page.date-finish-m-y}}</span>
 					</div>
 					<!-- <div class="company">{{page.company}}</div> -->
 				</div>
@@ -66,10 +66,10 @@
 				</div>
 				<div class="tag">
 					<div class="tag-icon">
-						<img src = "{{site.baseurl}}{{site.data.path.images}}date-icon.svg">
+						<img src = "{{site.baseurl}}{{site.data.path.images}}clock-icon.svg">
 					</div>
 					<div class="tag-label">
-						{{page.date-start-m}} - {{page.date-finish-m}}
+						{{page.completion-time}}
 					</div>
 				</div>
 			</div>
@@ -83,7 +83,8 @@
 			<div class="viewCode">
 				<h1>View <a href="">Source Code</a>  in Github</h1>
 			</div>
-			<a href="">
+			<a href="{{page.next}}">
+
 			<div class="nextProj">
 				<h1>Next Project</h1>
 				<h2>Mini Bizi</h2>

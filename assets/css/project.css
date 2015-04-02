@@ -75,7 +75,7 @@
 	float: right;
 	font-size: 12px;
 	letter-spacing: 1px;
-	color: #B09E9E;
+	color: rgb(111, 219, 133);
 }
 .company{
 	font-family: ProximaLight;
@@ -140,9 +140,11 @@
 	bottom: 0;top: 0;right: 0;left: 0;
 	margin: auto;
 }
-.tag:nth-child(2) img,
-.tag:nth-child(3) img {
+.tag:nth-child(2) img{
 	height: 60%;
+}
+.tag:nth-child(3) img{
+	height: 70%;
 }
 .tag-label{
 	width:100%;
