@@ -55,7 +55,6 @@
 	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 7px;
-	color: #8EC3FF;
 	line-height: 16px;
 }
 .description{
@@ -74,30 +73,45 @@
 	/*font-weight: 600;*/
 	float: right;
 	font-size: 12px;
-	letter-spacing: 1px;
-	color: rgb(111, 219, 133);
+	letter-spacing: 1px; 
 }
 .company{
 	font-family: ProximaLight;
 	font-size: 11px;
 	font-weight: 600;
 	color: #6D6B64;
-	margin-top: 
 }
 
 .banner{
 	width: 100%;
-	max-width:600px;
+	max-width:500px;
 	margin: 0px auto;
 	position: relative;
-	border-bottom: 2px solid #6A6A6A; 
-	border-radius: 8px;
+/*	border-bottom: 2px solid #6A6A6A; 
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;*/
+	padding-top:20px;
 }
 
 .banner img{
 	width:100%;
 }
 
+.bannerbg{
+	width:100%;
+	position: relative;
+		 box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  overflow: hidden;
+}
+.innershadow{
+
+	width: 102%;
+	height: 100%;
+	z-index: 2;
+	box-shadow: inset 0px -3px 2px 0px rgba(0,0,0,0.25);
+}
 
 
 
@@ -165,7 +179,6 @@
 .bar{
 	width:5px;
 	height: 50px;
-	background-color: #8EC3FF;
 	left:-5px;
 	position: absolute;
 }
@@ -192,64 +205,89 @@
 }
 .viewCode a{
 	text-decoration: underline;
-	color: #FF8383;
+	color: #7FBBE6;
 }
-.nextProj{
+.prenex-nav{
 	width: 100%;
 	height: 50px;
-	background-color: rgb(111, 219, 133);
 	text-align: center;
 	line-height: 22px;
 }
-.nextProj:hover{
-	background-color: rgb(58, 223, 91);
-}
-.nextProj h1{
+
+.prenex-nav h1{
 	font-family: ProximaLight;
 	font-size: 12px;
 	color: #FFFFFF;
-
+	margin-top: 9px;
+	line-height: 13px;
 }
-.nextProj h2{
+.prenex-nav h2{
 	font-family: Futura;
-	font-size: 19px;
+	font-size: 17px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-
-
+	letter-spacing: 1px;
+}
+.pv-text-l{
+	height: 100%;
+}
+.pv-text-r{
+	height: 100%;
+}
+.prevProj{
+	height: 100%;
+	position: relative;
+}
+.nextProj{
+	height: 100%;
+	position: relative;
+}
+.l-arrow{
+	position: absolute;
+	margin: auto auto;
+	top:0;bottom:0;left: 3px;
+	height: 50%;
+}
+.r-arrow{
+	position: absolute;
+	margin: auto auto;
+	top:0;bottom:0;right: 3px;
+	height: 50%;
 }
 
-@media screen and (max-width: 350px){
+.half{
+	width:50%;
+	float: left;
+}
+.full{
+	width: 100%;
+	float: left;
+}
+
+@media screen and (min-width: 0px) and (max-width:450px){
 	.wrap{
 		width:95%;
 	}
-	.projectNav{
-		display: none;
-	}
-	.banner{
-		padding-top:20px;
+
+	.prenex-nav h2{
+		font-size: 15px;
 	}
 }
-@media screen and (min-width: 351px) and (max-width:450px){
-	.wrap{
-		width:95%;
-	}
-	.projectNav{
-		display: none;
-	}
-	.banner{
-		padding-top:20px;
+@media screen and (min-width: 451px){
+	.pv-text-l{
+		height: 100%;
+		text-align: left;
+		margin-left: 30px;
+	}	
+	.pv-text-r{
+		height: 100%;
+		text-align: right;
+		margin-right: 30px;
 	}
 }
 @media screen and (min-width: 451px) and (max-width:500px){
 	.wrap{
 		width:95%;
-	}
-	.projectNav{
-		display: none;
-	}
-	.banner{
-		padding-top:20px;
 	}
 }
 @media screen and (min-width:401px) and (max-width:450px){

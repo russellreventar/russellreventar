@@ -11,29 +11,37 @@
 		{% include header.html %}
 		{% include navigator.html %}
 		<div id="content" class="beigeBG">
-			<div class="projectNav">
-				<a href="">
+			<!-- <div class="projectNav">
+				
+				{% if page.previous %}
+				<a href="{{site.baseurl}}{{page.previous.url}}">
 					<img src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
-					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
+
+					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.previous.name}}-logo.svg">
 				</a>
-					<!-- <img class="projlogo"src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png"> -->
-				<a href="">
-					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
+				{% endif %}
+					<img class="projlogo"src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
+				{% if page.next %}
+				<a href="{{site.baseurl}}{{page.next.url}}">
+					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.next.name}}-logo.svg">
 					<img src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
 				</a>
-			</div>
-		
+				{% endif %}
+			</div> -->
+			<div class="bannerbg" style="border-bottom: 3px solid #{{page.color}};">
+			<div class="innershadow overlay"></div>
 			<div class = "banner">
-				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-banner.png">
+				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.name}}-banner.png">
 			</div>
+		</div>
 				<div class="wrap">
 			<div class="title">
 				<!-- <img class="logo"src="{{site.baseurl}}{{site.data.path.images}}{{page.logo}}"> -->
 				<div class="heading">
-					<div class="name">{{page.title}}</div>
+					<div class="name" style="color: #{{page.color}};">{{page.title}}</div>
 					<div class="description">
 						<span>{{page.description}}</span>
-						<span>{{page.date-finish-m-y}}</span>
+						<span style="color: #{{page.color}};"> {{page.date-finish-m-y}}</span>
 					</div>
 					<!-- <div class="company">{{page.company}}</div> -->
 				</div>
@@ -76,20 +84,60 @@
 
 			
 			<div class="contentBody">
-				<div class="bar"></div>
+				<div class="bar" style="background-color: #{{page.color}};"></div>
 					{{content}}
 				</div>
 			</div>
 			<div class="viewCode">
-				<h1>View <a href="">Source Code</a>  in Github</h1>
+				<h1>View <a href="{{page.github-code}}">Source Code</a>  in Github</h1>
 			</div>
-			<a href="{{page.next}}">
+			
+			<div class="prenex-nav">
+				{% if page.previous and page.next %}
+					
+					<a href="{{site.baseurl}}{{page.previous.url}}">
+					<div class="prevProj half" style="background-color: #{{page.previous.color}};">
+						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
+						<div class="pv-text-l">
+							<h1>Previous</h1>
+							<h2>{{page.previous.title}}</h2>
+						</div>
+					</div>
+					</a>
+					
+					<a href="{{site.baseurl}}{{page.next.url}}">
+					<div class="nextProj half" style="background-color: #{{page.next.color}};">
+						<div class="pv-text-r">
+							<h1>Next</h1>
+							<h2>{{page.next.title}}</h2>
+						</div>
+						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
+					</div>
+					</a>
 
-			<div class="nextProj">
-				<h1>Next Project</h1>
-				<h2>Mini Bizi</h2>
-			</div>
-			</a>
+				{% elsif page.previous %}
+					<a href="{{site.baseurl}}{{page.previous.url}}">
+					<div class="prevProj full" style="background-color: #{{page.previous.color}};">
+						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
+						<div class="pv-text-l">
+							<h1>Previous</h1>
+							<h2>{{page.previous.title}}</h2>
+						</div>
+					</div>
+					</a>
+				{% elsif page.next %}
+					<a href="{{site.baseurl}}{{page.next.url}}">
+					<div class="nextProj full" style="background-color: #{{page.next.color}};">
+						<div class="pv-text-r">
+							<h1>Next</h1>
+							<h2>{{page.next.title}}</h2>
+						</div>
+						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
+					</div>
+					</a>
+				{% endif %}
+
+		</div>
 		</div>
 		{% include footer.html %}
 	</div>

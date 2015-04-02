@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Work
+permalink: /work/
 ---
 <div class = "wrap">
 		<div class = "page-name">- Work -</div>
@@ -10,11 +11,9 @@ title: Work
 		</div>
 		<div class="tileContainer">
 		<div class="grid">
-			{% assign sorted-pages = (site.pages | sort: 'datecompleted') %}
-			{% assign projects = (sorted-pages | where:'category','work')%}
+			{% assign projects = (site.posts| where:'category','work')%}
 			{% assign colCount=0 %}
 			{% for p in projects %}
-
 				{% if colCount == 0 %}
 					<div class="row">
 				{% endif %}
