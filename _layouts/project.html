@@ -11,24 +11,8 @@
 		{% include header.html %}
 		{% include navigator.html %}
 		<div id="content" class="beigeBG">
-			<!-- <div class="projectNav">
-				
-				{% if page.previous %}
-				<a href="{{site.baseurl}}{{page.previous.url}}">
-					<img src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
 
-					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.previous.name}}-logo.svg">
-				</a>
-				{% endif %}
-					<img class="projlogo"src="{{site.baseurl}}{{site.data.path.images}}{{page.pName}}-logo.png">
-				{% if page.next %}
-				<a href="{{site.baseurl}}{{page.next.url}}">
-					<img src="{{site.baseurl}}{{site.data.path.images}}{{page.next.name}}-logo.svg">
-					<img src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
-				</a>
-				{% endif %}
-			</div> -->
-			<div class="bannerbg" style="border-bottom: 3px solid #{{page.color}};">
+			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};">
 			<div class="innershadow overlay"></div>
 			<div class = "banner">
 				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.name}}-banner.png">
@@ -41,7 +25,7 @@
 					<div class="name" style="color: #{{page.color}};">{{page.title}}</div>
 					<div class="description">
 						<span>{{page.description}}</span>
-						<span style="color: #{{page.color}};"> {{page.date-finish-m-y}}</span>
+						<span> {{page.date-finish-m-y}}</span>
 					</div>
 					<!-- <div class="company">{{page.company}}</div> -->
 				</div>

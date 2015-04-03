@@ -103,23 +103,18 @@ function initNav(section){
 		color =  cameraColor;
 	}
 	$('.indicator').css({marginLeft:mleft});
-	$('.indicator').css({backgroundColor:color});
 
   	$('#work').on("mouseenter",function(){
 		$('.indicator').animate({marginLeft:compassMargin},70);
-		$('.indicator').css({backgroundColor:compassColor});
 	});
 	$('#music').on("mouseenter",function(){
 		$('.indicator').animate({marginLeft:guitarMargin},70);
-		$('.indicator').css({backgroundColor:guitarColor});
 	});
 		$('#videos').on("mouseenter",function(){
 		$('.indicator').animate({marginLeft:cameraMargin},70);
-		$('.indicator').css({backgroundColor:cameraColor});
 	});
   		
 	$( ".sections" ).on( "mouseleave", function() {
     	$('.indicator').css({marginLeft:mleft});
-		$('.indicator').css({backgroundColor:color});
   	});
 }

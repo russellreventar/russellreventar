@@ -191,8 +191,8 @@ h1,h2{
 			cursor:pointer;
 		}.col-3:first-child { margin-left: 0; }
 			.col-3 img{
-				width:100%;
-				height: 100%;
+				width:90%;
+				height:90%;
 			}
 
 			.switcher{
@@ -202,7 +202,7 @@ h1,h2{
 				background-size:100% 100%;
 			}
 				.indicator{
-					height:5px;
+					height:8px;
 					width:8px;
 					margin-top: 5px;
 					margin-left: 20px;

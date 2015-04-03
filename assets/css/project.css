@@ -59,9 +59,9 @@
 }
 .description{
 	margin-top: 3px;
-	font-family: ProximaLight;
 }
 .description span:nth-child(1){
+	font-family: ProximaLight;
 	font-style: italic;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -74,6 +74,7 @@
 	float: right;
 	font-size: 12px;
 	letter-spacing: 1px; 
+	color: #4a4a4a;
 }
 .company{
 	font-family: ProximaLight;
