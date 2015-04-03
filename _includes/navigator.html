@@ -6,7 +6,7 @@
 		<div class = "sections">
 			<div class = "col-3" id = "work">
 				<a href= "{{site.baseurl}}/work">
-				{% if page.url == "/work/index.html" or page.category == "work" %}
+				{% if page.url == "/work/" or page.category == "work" %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}compass-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}compass-icon.svg">
@@ -16,7 +16,7 @@
 
 			<div class = "col-3" id = "music">
 				<a href= "{{site.baseurl}}/music">
-				{% if page.url == "/music/index.html" or page.category == "music" %}
+				{% if page.url == "/music/" or page.category == "music" %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}guitar-icon.svg">
@@ -25,7 +25,7 @@
 			</div>
 			<div class = "col-3" id = "videos">
 				<a href= "{{site.baseurl}}/videos">
-				{% if page.url == "/videos/index.html" or page.category == "videos" %}
+				{% if page.url == "/videos/" or page.category == "videos" %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon-active.svg">
 				{% else %}
 					<img src="{{site.baseurl}}{{site.data.path.images}}camera-icon.svg">
