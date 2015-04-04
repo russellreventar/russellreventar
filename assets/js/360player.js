@@ -61,7 +61,7 @@ function ThreeSixtyPlayer() {
   autoPlay: false,
   allowMultiple: false,
   loadRingColor: 'rgba(156, 156, 156, 0.3)',
-  playRingColor: '#FFFFFF',
+  playRingColor: '#7DC5E0',
   backgroundRingColor: 'rgba(0, 0, 0, 0.0)',
   circleDiameter: 161,
   circleRadius: 80.5,

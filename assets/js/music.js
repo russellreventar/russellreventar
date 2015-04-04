@@ -1,6 +1,6 @@
 soundManager.setup({
   // path to directory containing SM2 SWF
-  url: '/assets/js/swf/'
+  url: '../assets/js/swf/'
 });
 
 threeSixtyPlayer.config.scaleFont = (navigator.userAgent.match(/msie/i)?false:true);
