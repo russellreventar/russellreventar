@@ -6,11 +6,18 @@
 	<script src = "{{site.baseurl}}{{site.data.path.js}}work.js"></script>
 	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}work.css" >
 </head>
-<body>
+<body 
+	{% if page.url == "/work/"%}
+		style="background-color: #F3EFE0;"
+	{% else %}
+		style="background-color: black;"
+	{%endif%}
+
+>
 	<div id="wrapper">
 		{% include header.html %}
 		{% include navigator.html %}
-		<div id="content" class="beigeBG">
+		<div id="content">
 			{{content}}
 		</div>
 		{% include footer.html %}
