@@ -1,43 +1,46 @@
 .item{
-	height:auto;
+	h/*eight:auto;*/
 	margin-bottom: 50px;
-	background-color: rgba(198,198,198,0.3);
+}
+.wrap{
+	padding-top: 40px;
 }
 
-.descriptor h1{
-	font-family: Futura;
-	letter-spacing: 1px;
-	color:#22A39F;
-	font-size:43px;
-	text-align: center;
-}
 
 .description{
 	height:40px;
 	padding:10px 10px 15px 10px;	
-	background-color: #464646;
 	position: relative;
 }
-.description a{
+.description h1{
 	text-decoration: none;
-	font-family: FuturaLT;
-	font-size:22px;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size:13px;
 	color:#F7D651; 
 	display: block;
-	letter-spacing: 1px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
 }
 
 .description #quote{
-	font-family:  ProximaLight;
+	font-family:  'Nothing You Could Do', cursive;
 	color: white;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 100;
 }
 
+.player iframe{
+	width:100%;
+	/*height: 100px;*/
+}
 .description #date{
-	font-family:  Futura;
+	font-family: 'Sorts Mill Goudy', serif;
 	font-size: 12px;
 	color: white;
 	float:right;
 	margin-top: 5px;
+	letter-spacing: 1px;
 }
 .video{
 	float:left;
@@ -56,7 +59,7 @@
 	height:100%;
 }
 
-@media screen and (max-width: 300px){
+/*@media screen and (max-width: 300px){
 
 	.wrap{
 		width:90%;
@@ -153,5 +156,5 @@
 		padding:10px 10px 15px 10px;
 		margin-bottom: 20px;	
 	}
-}
+}*/
 

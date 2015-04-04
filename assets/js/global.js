@@ -110,7 +110,7 @@ function initNav(section){
 	$('#music').on("mouseenter",function(){
 		$('.indicator').animate({marginLeft:guitarMargin},70);
 	});
-		$('#videos').on("mouseenter",function(){
+	$('#videos').on("mouseenter",function(){
 		$('.indicator').animate({marginLeft:cameraMargin},70);
 	});
   		
