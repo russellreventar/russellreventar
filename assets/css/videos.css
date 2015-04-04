@@ -1,8 +1,39 @@
+.title{
+	color:white;
+	text-decoration: none;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size:14px;
+	display: block;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.summary{
+	width:80%;
+	margin: 0 auto;
+	max-width: 500px;
+	padding-bottom: 40px;
+}
+.summary p{
+	font-family: 'Sorts Mill Goudy', serif;
+	color: #cccccc;
+	text-align: center;
+	font-size: 14px;
+}
+.descriptor{
+	border-left: none;
+}
+.descriptor p{
+	font-family: 'Sorts Mill Goudy', serif;
+	color: #cccccc;
+	text-align: center;
+}
 .item{
 	padding-bottom: 50px;
 	width:100%;
-	 max-width:640px;
-	 margin: 0 auto;
+	max-width:640px;
+	margin: 0 auto;
+	border-top: 1px solid white;
 }
 .wrap{
 	padding-top: 40px;
@@ -55,102 +86,16 @@
 	width:100%;
 	height:100%;
 }
-/*@media screen and (max-width: 300px){
 
-	.wrap{
-		width:90%;
-	}
-	.description{
-		height:40px;
-		padding:3px 3px 3px 3px;
-	}
-	.description a{
-		font-size:14px;
-	}
-
-	.description #quote{
-		font-size: 10px;
-	}
-
-	.description #date{
-		font-size: 8px;
-	}
-	
-}
-@media screen and (min-width: 301px) and (max-width: 400px){
-	.wrap{
-		width:90%;
-	}
-	
-	.description{
-		height:40px;
-		padding:10px 10px 10px 10px;	
-	}
-	
-	.description a{
-		font-size:17px;
-	}
-
-	.description #quote{
-		font-size: 11px;
-	}
-
-	.description #date{
-		font-size: 9px;
+@media screen and (min-width: 0px) and (max-width: 500px){
+	.summary{
+		width:100%;
 	}
 }
 
-@media screen and (min-width: 401px) and (max-width: 600px){
-	.description{
-		height:40px;
-		padding:10px 10px 10px 10px;	
-	}
-	.description a{
-		font-size:18px;
-	}
 
-	.description #quote{
-		font-size: 12px;
-	}
-
-	.description #date{
-		font-size: 10px;
-	}
-
-
-}
-@media screen and (min-width: 601px) and (max-width: 700px){
-	.description{
-		height:40px;
-		padding:10px 10px 15px 10px;	
-	}
-
-}
-@media screen and (min-width: 701px) and (max-width: 999px){
-	.description{
-		height:40px;
-		padding:10px 10px 15px 10px;
-		margin-bottom: 20px;	
-	}
-	.player{
-
-	}
-
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1920px){
-	.description{
-		height:40px;
-		padding:10px 10px 15px 10px;
-		margin-bottom: 20px;	
-	}
-}
 
 @media screen and (min-width: 1921px){
-.description{
-		height:40px;
-		padding:10px 10px 15px 10px;
-		margin-bottom: 20px;	
-	}
-}*/
+
+}*
 
