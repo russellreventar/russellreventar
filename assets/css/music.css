@@ -2,7 +2,7 @@
 	height: 50px;
 	padding-top:30px;
 	color: white;
-	font-family: NothingYouCouldDo;
+	font-family:  'Nothing You Could Do', cursive;
 	font-size: 14px;
 	letter-spacing: 1px;
 	width: 100%;
@@ -21,7 +21,7 @@
 	z-index: 2;
 }
 .sample span{
-	font-family: NothingYouCouldDo;
+	font-family:  'Nothing You Could Do', cursive;
 	text-transform: none;
 }
 .musicplayer{
