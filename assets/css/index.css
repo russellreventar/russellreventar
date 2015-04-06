@@ -242,8 +242,9 @@
 			-ms-animation-iteration-count: infinite;
 			-o-animation-iteration-count: infinite;
 		}
-		
-@media screen and (max-width: 400px){
+
+@media screen and (min-width: 0px) and (max-width: 350px){
+
 	.col {
 		margin: 1% 0 1% 20.5%;
 		width: 19%;
@@ -251,7 +252,27 @@
 	}
 	.section-title{
 		margin: 8px 0px 0px 0px;
-		font-size: 12px;
+		font-size: 11px;
+	}
+	.section{
+		width: 80%;
+		height: 140px;
+	}
+
+	.section-icon{
+		width:70%;
+		height:60%;
+	}
+}		
+@media screen  and (min-width: 351px)  and (max-width: 400px){
+	.col {
+		margin: 1% 0 1% 20.5%;
+		width: 19%;
+		height:160px; 
+	}
+	.section-title{
+		margin: 8px 0px 0px 5px;
+		font-size: 11px;
 	}
 	.section{
 		width: 80%;
