@@ -3,6 +3,7 @@
 	<title>{{ page.title }}</title>
 	{% include head.html %}
 	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}about.css" >
+	<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 			<div class="contactme" > 
 				<img src="{{site.baseurl}}{{site.data.path.images}}mail-icon.svg">
 			</div>
-		<div class="quote">"{{page.quote}}"</div>
+		<div class="quote"><span>"</span>{{page.quote}}<span>"</span></div>
 
 		<div class = "body">
 			{{content}}

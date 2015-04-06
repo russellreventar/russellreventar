@@ -2,9 +2,15 @@
   <img class="header-BG" src="{{site.baseurl}}{{site.data.path.images}}headerbg.png">
   <div id="myname">
     <div id="redbar"></div>
+
     <a href="{{site.baseurl}}">
+      {% if page.url != "/about/" %}
       <span>R</span>USSELL
       <span>R</span>EVENTAR
+      {% else %}
+      <span>R.R.</span>
+     <!--  <span>R</span> -->
+      {% endif %}
      </a>
   </div>
   <div id = "desks">

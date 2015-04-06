@@ -62,6 +62,11 @@
 	padding-top:45px;
 /* 	background-color: green; */
 }
+.quote span{
+	color: #6DB3DD;
+	font-size: 15px;
+	font-family: 'Sorts Mill Goudy', serif;
+}
 
 .body{
 	margin: 0 auto;
@@ -76,16 +81,6 @@
 	line-height: 1.7;
 	/*word-spacing: 1px;*/
 	font-family: 'Sorts Mill Goudy', serif;
-}
-
-.sec1 h{
-	font-family: Futura;
-	letter-spacing: 1px;
-	/* color:#414141; */
-	color:#22A39F;
-	font-size:40px;
-	position: relative;
-	float:left;
 }
 
 .sec2{
