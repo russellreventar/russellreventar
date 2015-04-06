@@ -13,37 +13,27 @@
 <div id = "content" class="beigeBG">
 
 		<div class = "wrap80">
-		<div class = "quote">
-			 {{page.quote}}
-		</div>
-		<div class = "portraitDetails">
-			<div class = "portrait"></div>
-			<div class = "details">
-				<div class = "value">
-					<li>{{page.fullname}}</li>
-					<li>{{page.age}}</li>
-					<li>{{page.location}}</li>
-					
-				</div>
-				<div class = "key">
-					<li>Name</li>
-					<li>Age</li>
-					<li>Location</li>
-				</div>
-				<div class="contactme" > 
-					<span>Contact</span>
-					<img src="{{site.baseurl}}{{site.data.path.images}}mail-icon.png">
-				</div>
-			</div>	
-		</div>
-		<div class = "title">
-			<h> About Me </h>
-		</div>
+
+			<div class = "title">
+				<h1>Russell Mark Reventar</h1>
+				<h2>about me</h2>
+			</div>
+
+			<div class = "info">
+				<h1> <span>22</span> • Toronto </h1>
+			</div>
+
+			<div class="contactme" > 
+				<img src="{{site.baseurl}}{{site.data.path.images}}mail-icon.svg">
+			</div>
+		<div class="quote">"{{page.quote}}"</div>
+
 		<div class = "body">
 			{{content}}
 		</div>
 
 		<div class = "sec2">
+			<div class = "portrait"></div>
 			<h1> Find me on </h1>
 			<div class = "findmeLinks">
 				<li>
