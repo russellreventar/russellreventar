@@ -1,5 +1,15 @@
-<div id = "header" {% if page.url == "/index.html" %}class="noDisplay"{% else %} class="darkGreyBG" {% endif %}>
-  <img class="header-BG" src="{{site.baseurl}}{{site.data.path.images}}headerbg.png">
+<div id = "header" 
+  {% if page.url == "/index.html" %}
+    class="noDisplay"
+  {% else %} 
+    class="darkGreyBG" 
+  {% endif %}
+>
+  {% if page.url != "/index.html" %}
+     <img class="header-BG" src="{{site.baseurl}}{{site.data.path.images}}bg-header.png">
+  {% endif %} 
+
+
   <div id="myname">
     <div id="redbar"></div>
 
@@ -14,7 +24,7 @@
      </a>
   </div>
   <div id = "desks">
-    <img src ="{{site.baseurl}}{{site.data.path.images}}desk-developer.svg">
-    <img src ="{{site.baseurl}}{{site.data.path.images}}desk-arts.svg">
+    <img src ="{{site.baseurl}}{{site.data.path.icons}}desk-developer.svg">
+    <img src ="{{site.baseurl}}{{site.data.path.icons}}desk-arts.svg">
   </div>
 </div>

@@ -15,13 +15,13 @@
 			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};">
 			<div class="innershadow overlay"></div>
 			<div class = "banner">
-				<img src="{{site.baseurl}}{{site.data.path.images}}{{page.name}}-banner.png">
+				<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/banner@2x.png">
 			</div>
 		</div>
 				<div class="wrap">
 			<div class="title">
-				<!-- <img class="logo"src="{{site.baseurl}}{{site.data.path.images}}{{page.logo}}"> -->
-				<div class="heading">
+				<!-- <img class="logo"src="{{site.baseurl}}{{site.data.path.images}}/{{page.name}}/logo.svg">
+ -->				<div class="heading">
 					<div class="name" style="color: #{{page.color}};">{{page.title}}</div>
 					<div class="description">
 						<span>{{page.description}}</span>
@@ -35,13 +35,13 @@
 				<div class="tag">
 					<div class="tag-icon">
 						{% if page.platform == "iOS"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}ios-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}ios.svg">
 						{% elsif page.platform == "Web"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}web-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}web.svg">
 						{% elsif page.platform == "Java"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}java.svg">
 						{% else %}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}java.svg">
 						{% endif %}
 					</div>
 					<div class="tag-label">
@@ -50,7 +50,7 @@
 				</div>
 				<div class="tag">
 					<div class="tag-icon">
-						<img src = "{{site.baseurl}}{{site.data.path.images}}proglang-icon.svg">
+						<img src = "{{site.baseurl}}{{site.data.path.icons}}proglang.svg">
 					</div>
 					<div class="tag-label">
 						{{page.language}}
@@ -58,7 +58,7 @@
 				</div>
 				<div class="tag">
 					<div class="tag-icon">
-						<img src = "{{site.baseurl}}{{site.data.path.images}}clock-icon.svg">
+						<img src = "{{site.baseurl}}{{site.data.path.icons}}clock.svg">
 					</div>
 					<div class="tag-label">
 						{{page.completion-time}}
@@ -81,7 +81,7 @@
 					
 					<a href="{{site.baseurl}}{{page.previous.url}}">
 					<div class="prevProj half" style="background-color: #{{page.previous.color}};">
-						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
+						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
 						<div class="pv-text-l">
 							<h1>Previous</h1>
 							<h2>{{page.previous.title}}</h2>
@@ -95,14 +95,14 @@
 							<h1>Next</h1>
 							<h2>{{page.next.title}}</h2>
 						</div>
-						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
+						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
 					</div>
 					</a>
 
 				{% elsif page.previous %}
 					<a href="{{site.baseurl}}{{page.previous.url}}">
 					<div class="prevProj full" style="background-color: #{{page.previous.color}};">
-						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.images}}leftarrow-icon.svg">
+						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
 						<div class="pv-text-l">
 							<h1>Previous</h1>
 							<h2>{{page.previous.title}}</h2>
@@ -116,7 +116,7 @@
 							<h1>Next</h1>
 							<h2>{{page.next.title}}</h2>
 						</div>
-						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.images}}rightarrow-icon.svg">
+						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
 					</div>
 					</a>
 				{% endif %}

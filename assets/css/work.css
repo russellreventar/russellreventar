@@ -1,18 +1,19 @@
 .descriptor{
 	width:80%;
 	max-width: 700px;
-	margin:0px auto 20px auto;
-	border-left: 10px solid #d48574;
+	margin:0px auto 30px auto;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+
 }
 .descriptor p{
 	font-family: ProximaLight;
 	color:#606060;
-	font-size:14px;
+	font-size:13px;
 	letter-spacing: 0.3px;
-	line-height: 1.5;
+	line-height: 1.4;
 	word-spacing: 1px;
-	margin-left: 20px;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 
 .tileContainer{
@@ -151,7 +152,6 @@
 	}
 	.descriptor{
 		width:100%;
-		border-left: 8px solid #d48574;
 	}
 }
 @media screen and (min-width:401px) and (max-width:450px){
@@ -160,7 +160,6 @@
 	}
 	.descriptor{
 		width:90%;
-		border-left: 8px solid #d48574;
 	}
 	
 }
@@ -171,7 +170,6 @@
 	}
 	.descriptor{
 		width:90%;
-		border-left: 8px solid #d48574;
 	}
 	.tileContainer{
 		width: 70%;
@@ -192,7 +190,6 @@
 	}
 	.descriptor{
 		width:90%;
-		border-left: 8px solid #d48574;
 	}
 	.worktile > .overlay h1{
 		opacity: 1;

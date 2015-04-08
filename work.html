@@ -21,23 +21,23 @@ color: F3EFE0
 				<div class="one-third column m-bottom-40">
 			    	<a href="{{site.baseurl}}{{p.permalink}}">
 				    <div class = "worktile">
-				    	<img src="{{site.baseurl}}{{site.data.path.images}}{{p.name}}-tile.png">
+				    	<img src="{{site.baseurl}}{{site.data.path.projects}}{{p.name}}/thumbnail@2x.png">
 						<div class="infobar">
 							<ul>
 								<li><span>{{p.title}}</span></li>
 								<li>
-								<img src="{{site.baseurl}}{{site.data.path.images}}date-icon.svg">
+								<img src="{{site.baseurl}}{{site.data.path.icons}}date.svg">
 								<span>{{p.date-finish-m-y}}</span>
 								</li>
 								<li>
 										{% if p.platform == "iOS"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}ios-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}ios.svg">
 						{% elsif p.platform == "Web"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}web-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}web.svg">
 						{% elsif p.platform == "Java"%}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}java.svg">
 						{% else %}
-							<img src = "{{site.baseurl}}{{site.data.path.images}}java-icon.svg">
+							<img src = "{{site.baseurl}}{{site.data.path.icons}}java.svg">
 						{% endif %}
 								<span>{{p.platform}}</span>
 								</li>

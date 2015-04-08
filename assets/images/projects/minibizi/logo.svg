@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="103px" height="64px" viewBox="0 0 103 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>minibizi-logo</title>
+    <title>logo</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="minibizi-logo" sketch:type="MSArtboardGroup">
-            <g sketch:type="MSLayerGroup" transform="translate(3.159894, 4.000000)">
+    <g id="minibizi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSArtboardGroup">
+            <g id="minibizi-logo" sketch:type="MSLayerGroup" transform="translate(3.159894, 4.000000)">
                 <g id="green" transform="translate(0.000000, 10.984240)" sketch:type="MSShapeGroup">
                     <path d="M0.334962265,9.37664594 C0.334962265,28.7721678 15.9354342,44.49517 35.1799464,44.49517 C54.4244585,44.49517 70.0249305,28.7721678 70.0249305,9.37664594" id="Stroke-3" stroke="#47B678" stroke-width="3"></path>
                     <path d="M0.334962265,5.98891934 C0.334962265,25.3844412 15.9354342,41.1074435 35.1799464,41.1074435 C54.4244585,41.1074435 70.0249305,25.3844412 70.0249305,5.98891934" id="Stroke-3-2" stroke="#59E496" stroke-width="4"></path>
