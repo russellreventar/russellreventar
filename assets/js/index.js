@@ -231,11 +231,6 @@ setTimeout(function(){
 		$('#menu').fadeIn(300);
 		$('#header').fadeIn(300);
 		$('#footer').css("opacity",1);
-	/*
-	setTimeout(function(){
-			$('#menu').css("background-image","linear-gradient(0deg, rgba(0,0,0,0.00) 3%, rgba(0,0,0,0.51) 100%)");
-			},200);
-*/
 	}, 2500);
         }
 	});

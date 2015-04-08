@@ -16,12 +16,12 @@
 		<div class = "wrap80">
 
 			<div class = "title">
-				<h1>Russell Mark Reventar</h1>
-				<h2>about me</h2>
+				<h1>{{page.fullname}}</h1>
+				<h2>{{page.subName}}</h2>
 			</div>
 
 			<div class = "info">
-				<h1> <span>22</span> • Toronto </h1>
+				<h1> <span>{{page.age}}</span> • {{page.location}} </h1>
 			</div>
 
 			<div class="contactme" > 
@@ -37,21 +37,13 @@
 			<div class = "portrait"></div>
 			<h1> Find me on </h1>
 			<div class = "findmeLinks">
-				<li>
-					<a href="/about/about.html">
-					Instagram</a></li>
-				<li>
-					<a href="/work/">
-					Linkedin</a></li>
-				<li>
-					<a href="https://github.com/russellreventar" target = "_blank">
-					Github</a></li>
-				<li>
-					<a href="/contact/">
-					Youtube</a></li>
-				<li>
-					<a href="/contact/">
-					Twitter</a></li>
+				{% for sc in page.socialNets %}
+					<li>
+						<a href="{{sc.link}}">
+							{{sc.name}}
+						</a>
+					</li>
+				{% endfor %}
 			</div>
 
 		</div> 

@@ -1,7 +1,7 @@
 #welcome{
 	width: 60%;
 	max-width: 500px;
-	min-width: 300px;
+	min-width: 250px;
 	height: 140px;
 	margin: auto;
 	position: absolute;
@@ -263,6 +263,15 @@
 		width:70%;
 		height:60%;
 	}
+	.dev-text{
+		font-size: 12px;
+	}
+	.art-text{
+		font-size: 15px;
+	}
+	#welcome{
+		height: 100px;
+	}
 }		
 @media screen  and (min-width: 351px)  and (max-width: 400px){
 	.col {
@@ -283,6 +292,16 @@
 		width:70%;
 		height:60%;
 	}
+
+	.dev-text{
+		font-size: 12px;
+	}
+	.art-text{
+		font-size: 15px;
+	}
+	#welcome{
+		height: 100px;
+	}
 }
 
 @media screen and (min-width: 401px) and (max-width: 550px){
@@ -298,7 +317,15 @@
 	.section-title{
 		margin-left: 0;
 	}
-
+	.dev-text{
+		font-size: 12px;
+	}
+	.art-text{
+		font-size: 15px;
+	}
+	#welcome{
+		height: 120px;
+	}
 
 }
 @media screen and (min-width: 551px) and (max-width: 700px){
