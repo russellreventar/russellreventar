@@ -1,7 +1,7 @@
 #welcome{
 	width: 60%;
 	max-width: 500px;
-	min-width: 290px;
+	min-width: 300px;
 	height: 140px;
 	margin: auto;
 	position: absolute;
@@ -340,4 +340,5 @@
 
 
 }
+
 
