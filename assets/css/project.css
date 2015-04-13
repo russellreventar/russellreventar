@@ -267,13 +267,14 @@
 }
 
 #gallery{
-	width:100%;
-	height: 250px;
-	max-width:500px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
-	border: 4px solid black;
+
+	width: 100vw; 
+    height: 56.25vw;
+    max-height: 40vh;
+    max-width: 80vh; 
 }
 #gallery img{
 	width: 100%;
@@ -283,6 +284,7 @@
 }
 .slider{
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .slider ul{
 	width: 200px;
@@ -293,8 +295,8 @@
 .slider li{
 	/*background-color: gray;*/
 	border-radius: 50%;
-	width: 8px;
-	height: 8px;
+	width: 6px;
+	height: 6px;
 	display:inline-block;
     *display:inline; 
     *zoom:1; 
@@ -387,6 +389,9 @@
   to {
     -webkit-transform: translateX(0%);
   }
+}
+@media screen and (min-width:451px) and (max-width:500px){
+
 }
 @media screen and (min-width: 0px) and (max-width:450px){
 	.wrap{
