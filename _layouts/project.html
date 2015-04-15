@@ -77,7 +77,7 @@
 			<div class="viewCode">
 				<h1>View <a href="{{page.github-code}}">Source Code</a>  in Github</h1>
 			</div>
-			<div id="gallery" class = "gal-{{page.ss-orientation}}">
+			<div id="gallery">
 				{% for ss in page.screenshots %}
 					<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
 				{% endfor %}
