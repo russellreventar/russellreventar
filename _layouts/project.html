@@ -6,11 +6,11 @@
 	<script src = "{{site.baseurl}}{{site.data.path.js}}project.js"></script>
 	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}project.css" >
 </head>
-<body>
+<body class="beigeBG">
 	<div id="wrapper">
 		{% include header.html %}
 		{% include navigator.html %}
-		<div id="content" class="beigeBG">
+		<div id="content">
 
 			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};">
 			<div class="innershadow overlay"></div>
@@ -79,18 +79,18 @@
 				{% for ss in page.screenshots %}
 					<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
 				{% endfor %}
-			</div>
 			<div class="slider">
+				{% for ss in page.screenshots %}
+					<h1>{{ss.label}}</h1>
+				{% endfor %}
 				<ul>
 					{% for ss in page.screenshots %}
 						<li></li>
 					{% endfor %}
 				</ul>
 			</div>
-
-			
-			
-			<div class="prenex-nav">
+			</div>
+		<div class="prenex-nav">
 				{% if page.previous and page.next %}
 					
 					<a href="{{site.baseurl}}{{page.previous.url}}">
@@ -134,7 +134,6 @@
 					</div>
 					</a>
 				{% endif %}
-
 		</div>
 		</div>
 		{% include footer.html %}

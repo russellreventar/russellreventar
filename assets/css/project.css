@@ -214,6 +214,7 @@
 	height: 50px;
 	text-align: center;
 	line-height: 22px;
+	margin-top: 25px;
 }
 
 .prenex-nav h1{
@@ -273,8 +274,8 @@
 
 	width: 100vw; 
     height: 56.25vw;
-    max-height: 40vh;
-    max-width: 80vh; 
+    max-height: 30vh;
+    max-width: 60vh; 
 }
 #gallery img{
 	width: 100%;
@@ -283,25 +284,40 @@
 	left: 0; top:0;
 }
 .slider{
-	margin-top: 5px;
-	margin-bottom: 5px;
+	height:25px;
+	z-index: 4;
+	position: absolute;
+	bottom: 0;right: 0; left: 0;
+	margin: auto auto;
+	background: rgba(0,0,0,0.50);
+}
+.slider h1{
+	color: white;
+	font-family: ProximaLight;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	right:6px; bottom: 6px;
+	margin: auto auto;
 }
 .slider ul{
-	width: 200px;
-	margin: 0 auto;
+	/*width: 200px;*/
+	margin: auto auto;
 	text-align:center;
-
+	position: absolute;
+	bottom: 5px;
+	left: 0;right: 0;
 }
 .slider li{
-	/*background-color: gray;*/
+	/*background-color: white;*/
 	border-radius: 50%;
-	width: 6px;
-	height: 6px;
+	width: 4px;
+	height: 4px;
 	display:inline-block;
     *display:inline; 
     *zoom:1; 
     margin-right:5px;
-    border: 1px solid gray;
+    border: 2px solid white;
     cursor: pointer;
 }
 .moveLeft{
