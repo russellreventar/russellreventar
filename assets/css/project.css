@@ -272,10 +272,9 @@
 	margin: 0 auto;
 	overflow: hidden;
 
-	width: 100vw; 
-    height: 56.25vw;
-    max-height: 30vh;
-    max-width: 60vh; 
+	width: 100%; 
+    max-width: 500px; 
+    max-height: 250px;
 }
 #gallery img{
 	width: 100%;

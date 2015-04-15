@@ -1,6 +1,10 @@
 var nextImgID = 1;
 var currImgID = 1;
+$(window).resize(function(){
+	$("#gallery").height($(this).width()/2);
+});
 $(document).ready(function(){
+	$("#gallery").height($(this).width()/2);
 	changeImg();
 	$(".slider ul li").click(sliderClicked);
 
