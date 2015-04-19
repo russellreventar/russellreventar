@@ -10,9 +10,14 @@
 </head>
 <body class="beigeBG">
 	<div id="wrapper">
+	<div class="fullscreenImg">
+		{% for ss in page.screenshots %}
+			<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
+		{% endfor %}
+	</div>
 		{% include header.html %}
 		{% include navigator.html %}
-		<div id="content">
+		<div id="content" class="beigeBG">
 
 			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};">
 			<div class="innershadow overlay"></div>
