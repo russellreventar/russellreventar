@@ -9,19 +9,32 @@ $(document).ready(function(){
 	$(".slider ul li").click(sliderClicked);
 	$( "#gallery" ).on( "swiperight", previousImg);
 	$( "#gallery" ).on( "swipeleft", nextImg);
-	$( "#gallery").on("click",fullscreenImg);
-	$( ".fullscreenImg").on("click", function(){$('.fullscreenImg').css("display","none")});
+	$( ".clickzone").on("click",fullscreenImg);
+	$( ".fullscreenImg").on("click", function(){$(this).css("display","none")});
 
 });
 function init(){
 	gallerySize = $('.slider ul li').length;
 	$("#gallery").height($(this).width()/1.85);
+	$('.clickzone').height(($('#gallery').height())- ($('.slider').height()));
 	changeImg();
 }
 function fullscreenImg(){
 	console.log("hello");
+	clearFullscreenImg();
 	$('.fullscreenImg').css("display","block");
 	$(".fullscreenImg img:nth-child("+ (currImgID) +")").css("display","block");
+ 	$(".fullscreenImg img:nth-child("+ (currImgID) +")").center();
+    $(".fullscreenImg img:nth-child("+ (currImgID) +")").center();
+
+}
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
 }
 function nextImg(){
 	if(currImgID == gallerySize){
@@ -84,7 +97,11 @@ function clearAnimations(){
 
 	});
 }
-
+function clearFullscreenImg(){
+	$(".fullscreenImg img").each(function(i) {
+ 		$(this).css("display", "none");
+	});
+}
 function clearLabels(){
 	$(".slider h1").each(function(i){
 		$(this).css("display","none");

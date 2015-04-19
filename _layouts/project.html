@@ -86,16 +86,18 @@
 				{% for ss in page.screenshots %}
 					<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
 				{% endfor %}
-			<div class="slider">
-				{% for ss in page.screenshots %}
-					<h1>{{ss.label}}</h1>
-				{% endfor %}
-				<ul>
+				<div class="clickzone">
+				</div>
+				<div class="slider">
 					{% for ss in page.screenshots %}
-						<li></li>
+						<h1>{{ss.label}}</h1>
 					{% endfor %}
-				</ul>
-			</div>
+					<ul>
+						{% for ss in page.screenshots %}
+							<li></li>
+						{% endfor %}
+					</ul>
+				</div>
 			</div>
 		<div class="prenex-nav">
 				{% if page.previous and page.next %}
