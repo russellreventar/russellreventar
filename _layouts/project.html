@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Work - {{ page.title }}</title>
-	
+
 	{% include head.html %}
 	<script src = "{{site.baseurl}}{{site.data.path.js}}project.js"></script>
 	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}project.css" >
@@ -80,9 +80,6 @@
 					{{content}}
 				</div>
 			</div>
-			<div class="viewCode">
-				<h1>View <a href="{{page.github-code}}">Source Code</a>  in Github</h1>
-			</div>
 			<div id="gallery">
 				{% for ss in page.screenshots %}
 					<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
@@ -99,6 +96,9 @@
 						{% endfor %}
 					</ul>
 				</div>
+			</div>
+						<div class="viewCode">
+				<h1>View <a href="{{page.github-code}}">Source Code</a>  in Github</h1>
 			</div>
 		<div class="prenex-nav">
 				{% if page.previous and page.next %}

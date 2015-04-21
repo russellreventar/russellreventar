@@ -180,7 +180,7 @@
 .bar{
 	width:5px;
 	height: 50px;
-	left:-5px;
+	left:-3px;
 	position: absolute;
 }
 .contentBody{
@@ -197,14 +197,55 @@
 .wrap{
 		width:80%;
 	}
+.quote{
+	margin-top:30px;
+	position: relative;
+	font-size: 13px;
+	font-style: italic;
+	color: rgb(108, 108, 108);
+}
+blockquote{
+	border-left: 5px solid #B8B8B8;
+	padding-left: 7px;
+}
+.cite{
+	margin: 8px auto;
+	position: relative;
+	height: 40px;
+	padding-left: 0px;
+}
+.cite img{
+	width: 32px;height: 32px;
+	border-radius: 50%;
+	border: 2px solid white;
+/*	float: left;*/
+}
+.cite-label{
+	padding-top: 3px;
+	padding-left: 3px;
+	display: inline-block;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 15px;
+}
+.cite-label div:nth-child(1){
+	font-weight: 900;
+	color: black;
+}
+.cite-img{
+	display:inline-block;
+	vertical-align:top;
+}
 .viewCode{
 	font-family: Futura;
 	font-size: 14px;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 50px;
 	color: #4A4A4A;
+	margin-top: 30px;
+	background-color: white;
 }
 .viewCode a{
 	text-decoration: underline;
@@ -215,7 +256,6 @@
 	height: 50px;
 	text-align: center;
 	line-height: 22px;
-	margin-top: 25px;
 }
 
 .prenex-nav h1{
