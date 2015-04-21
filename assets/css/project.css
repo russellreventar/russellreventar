@@ -184,7 +184,7 @@
 	position: absolute;
 }
 .contentBody{
-	color: #2A2A2A;
+	color: black;
 	line-height: 20px;
 	font-family: ProximaLight;
 	font-size: 14px;
@@ -278,7 +278,7 @@
 }
 .fullscreenImg img{
 	display: none;
-	width: 95%;
+	width: 100%;
 	position: absolute;
 	margin: auto auto;
 }
