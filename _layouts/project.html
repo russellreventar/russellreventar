@@ -20,7 +20,7 @@
 		{% include navigator.html %}
 		<div id="content" class="beigeBG">
 
-			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};">
+			<div class="bannerbg" style="border-top: 3px solid #{{page.color}};background:#{{page.color}}">
 			<div class="innershadow overlay"></div>
 			<div class = "banner">
 				<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/banner@2x.png">
@@ -97,54 +97,54 @@
 					</ul>
 				</div>
 			</div>
-						<div class="viewCode">
+			<div class="viewCode">
 				<h1>View <a target="_blank" href="{{page.github-code}}">Source Code</a>  in Github</h1>
 			</div>
-		<div class="prenex-nav">
-				{% if page.previous and page.next %}
-					
-					<a href="{{site.baseurl}}{{page.previous.url}}">
-					<div class="prevProj half" style="background-color: #{{page.previous.color}};">
-						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
-						<div class="pv-text-l">
-							<h1>Previous</h1>
-							<h2>{{page.previous.title}}</h2>
+			<div class="prenex-nav">
+					{% if page.previous and page.next %}
+						
+						<a href="{{site.baseurl}}{{page.previous.url}}">
+						<div class="prevProj half" style="background-color: #{{page.previous.color}};">
+							<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
+							<div class="pv-text-l">
+								<h1>Previous</h1>
+								<h2>{{page.previous.title}}</h2>
+							</div>
 						</div>
-					</div>
-					</a>
-					
-					<a href="{{site.baseurl}}{{page.next.url}}">
-					<div class="nextProj half" style="background-color: #{{page.next.color}};">
-						<div class="pv-text-r">
-							<h1>Next</h1>
-							<h2>{{page.next.title}}</h2>
+						</a>
+						
+						<a href="{{site.baseurl}}{{page.next.url}}">
+						<div class="nextProj half" style="background-color: #{{page.next.color}};">
+							<div class="pv-text-r">
+								<h1>Next</h1>
+								<h2>{{page.next.title}}</h2>
+							</div>
+							<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
 						</div>
-						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
-					</div>
-					</a>
+						</a>
 
-				{% elsif page.previous %}
-					<a href="{{site.baseurl}}{{page.previous.url}}">
-					<div class="prevProj full" style="background-color: #{{page.previous.color}};">
-						<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
-						<div class="pv-text-l">
-							<h1>Previous</h1>
-							<h2>{{page.previous.title}}</h2>
+					{% elsif page.previous %}
+						<a href="{{site.baseurl}}{{page.previous.url}}">
+						<div class="prevProj full" style="background-color: #{{page.previous.color}};">
+							<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
+							<div class="pv-text-l">
+								<h1>Previous</h1>
+								<h2>{{page.previous.title}}</h2>
+							</div>
 						</div>
-					</div>
-					</a>
-				{% elsif page.next %}
-					<a href="{{site.baseurl}}{{page.next.url}}">
-					<div class="nextProj full" style="background-color: #{{page.next.color}};">
-						<div class="pv-text-r">
-							<h1>Next</h1>
-							<h2>{{page.next.title}}</h2>
+						</a>
+					{% elsif page.next %}
+						<a href="{{site.baseurl}}{{page.next.url}}">
+						<div class="nextProj full" style="background-color: #{{page.next.color}};">
+							<div class="pv-text-r">
+								<h1>Next</h1>
+								<h2>{{page.next.title}}</h2>
+							</div>
+							<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
 						</div>
-						<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
-					</div>
-					</a>
-				{% endif %}
-		</div>
+						</a>
+					{% endif %}
+			</div>
 		</div>
 		{% include footer.html %}
 	</div>
