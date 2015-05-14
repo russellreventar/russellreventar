@@ -329,12 +329,13 @@ blockquote{
 	width: 100%; 
     max-width: 500px; 
     max-height: 270px;
+    background: black;
 }
 #gallery img{
-	width: 100%;
 	height: 100%;
 	position: absolute;
-	left: 0; top:0;
+	left: 0; top:0; right: 0;
+	margin: auto auto;
 }
 .clickzone{
 	width: 100%;
