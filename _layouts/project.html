@@ -13,7 +13,7 @@
 	<div id="wrapper">
 	<div class="fullscreenImg">
 		{% for ss in page.screenshots %}
-			<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
+			<img class="{{page.ss-orientation}}" src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
 		{% endfor %}
 	</div>
 		{% include header.html %}

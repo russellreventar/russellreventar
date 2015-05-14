@@ -3,6 +3,7 @@ var currImgID = 1;
 var gallerySize = 0;
 $(window).resize(function(){
 	$("#gallery").height($(this).width()/1.85);
+	$(".fullscreenImg img:nth-child("+ (currImgID) +")").center();
 });
 $(document).ready(function(){
 	init();
@@ -25,7 +26,6 @@ function fullscreenImg(){
 	$('.fullscreenImg').css("display","block");
 	$(".fullscreenImg img:nth-child("+ (currImgID) +")").css("display","block");
  	$(".fullscreenImg img:nth-child("+ (currImgID) +")").center();
-    $(".fullscreenImg img:nth-child("+ (currImgID) +")").center();
 
 }
 jQuery.fn.center = function () {
