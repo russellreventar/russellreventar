@@ -18,7 +18,7 @@
 	</div>
 		{% include header.html %}
 		{% include navigator.html %}
-		<div id="content" class="beigeBG">
+		<div id="content" class="beigeBG" style="padding-bottom:130px;">
 
 			<div class="bannerbg" style="border-top: 3px solid #{{page.color}}">
 			<div class="innershadow overlay"></div>
@@ -53,7 +53,7 @@
 						{% endif %}
 					</div>
 					<div class="tag-label">
-						{{page.platform}} Application
+						{{page.platform}}
 					</div>
 				</div>
 				<div class="tag">
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 			<div class="viewCode">
-				<h1>View <a target="_blank" href="{{page.github-code}}">Source Code</a>  in Github</h1>
+				<h1>View <a target="_blank" style="color: #{{page.color}};"href="{{page.github-code}}">Source Code</a>  in Github</h1>
 			</div>
 			<div class="prenex-nav">
 					{% if page.previous and page.next %}
