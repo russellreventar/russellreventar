@@ -209,11 +209,11 @@ blockquote{
 	/*margin-left: 25px;*/
 
 }
+
 .cite{
 	margin: 8px auto;
 	position: relative;
 	height: 90px;
-	padding-left: 0px;
 }
 .cite img{
 	width: 42px;height: 42px;
@@ -222,7 +222,7 @@ blockquote{
 }
 .cite-label{
 	padding-top: 3px;
-	padding-left: 10px;
+	padding-right: 6px;
 	display: inline-block;
 	font-size: 12px;
 	font-style: normal;
@@ -230,6 +230,7 @@ blockquote{
 	width: 100%;
 	float: right;
 	text-align: right;
+	border-right: 3px solid white;
 }
 .cite-label div:nth-child(1){
 	font-weight: 900;
@@ -238,7 +239,7 @@ blockquote{
 .cite-img{
 	display:inline-block;
 	vertical-align:top;
-	padding-left: 7px;
+	padding-right: 4px;
 	float: right;
 }
 .viewCode{
