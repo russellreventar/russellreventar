@@ -219,17 +219,17 @@ blockquote{
 	width: 42px;height: 42px;
 	border-radius: 50%;
 	border: 2px solid white;
-	float: left;
 }
 .cite-label{
 	padding-top: 3px;
-	padding-left: 3px;
+	padding-left: 10px;
 	display: inline-block;
 	font-size: 12px;
 	font-style: normal;
 	line-height: 15px;
 	width: 100%;
-	float: left;
+	float: right;
+	text-align: right;
 }
 .cite-label div:nth-child(1){
 	font-weight: 900;
@@ -238,6 +238,8 @@ blockquote{
 .cite-img{
 	display:inline-block;
 	vertical-align:top;
+	padding-left: 7px;
+	float: right;
 }
 .viewCode{
 	font-family: Futura;
