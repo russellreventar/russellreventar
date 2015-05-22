@@ -214,16 +214,16 @@ blockquote{
 	padding-left: 0px;
 }
 .cite img{
-	width: 32px;height: 32px;
+	width: 42px;height: 42px;
 	border-radius: 50%;
 	border: 2px solid white;
 /*	float: left;*/
 }
 .cite-label{
-	padding-top: 3px;
+	padding-top: 9px;
 	padding-left: 3px;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 12px;
 	font-style: normal;
 	line-height: 15px;
 }
