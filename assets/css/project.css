@@ -69,7 +69,7 @@
 }
 .description span:nth-child(2){
 	font-family: Futura;
-	margin-top: 3px;
+	margin-top: 4px;
 	/*font-weight: 600;*/
 	float: right;
 	font-size: 12px;
@@ -213,7 +213,7 @@ blockquote{
 .cite{
 	margin: 8px auto;
 	position: relative;
-	height: 90px;
+	height: 50px;
 }
 .cite img{
 	width: 42px;height: 42px;
@@ -230,7 +230,7 @@ blockquote{
 	/*width: 100%;*/
 	float: right;
 	text-align: right;
-	border-right: 2px solid white;
+	border-right: 2px solid rgb(184, 184, 184);;
 }
 .cite-label div:nth-child(1){
 	font-weight: 900;
@@ -239,7 +239,6 @@ blockquote{
 .cite-img{
 	display:inline-block;
 	vertical-align:top;
-	padding-right: 2px;
 	padding-left: 4px;
 	float: right;
 }
