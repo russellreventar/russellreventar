@@ -69,7 +69,7 @@
 }
 .description span:nth-child(2){
 	font-family: Futura;
-	margin-top: 3px;
+	margin-top: 4px;
 	/*font-weight: 600;*/
 	float: right;
 	font-size: 12px;
@@ -209,27 +209,28 @@ blockquote{
 	/*margin-left: 25px;*/
 
 }
+
 .cite{
 	margin: 8px auto;
 	position: relative;
-	height: 90px;
-	padding-left: 0px;
+	height: 50px;
 }
 .cite img{
 	width: 42px;height: 42px;
 	border-radius: 50%;
 	border: 2px solid white;
-	float: left;
 }
 .cite-label{
 	padding-top: 3px;
-	padding-left: 3px;
+	padding-right: 6px;
 	display: inline-block;
 	font-size: 12px;
 	font-style: normal;
 	line-height: 15px;
-	width: 100%;
-	float: left;
+	/*width: 100%;*/
+	float: right;
+	text-align: right;
+	border-right: 2px solid rgb(184, 184, 184);;
 }
 .cite-label div:nth-child(1){
 	font-weight: 900;
@@ -238,6 +239,8 @@ blockquote{
 .cite-img{
 	display:inline-block;
 	vertical-align:top;
+	padding-left: 4px;
+	float: right;
 }
 .viewCode{
 	font-family: Futura;
