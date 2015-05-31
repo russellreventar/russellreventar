@@ -6,12 +6,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="beigeBG">
 <div id = "wrapper">
 	{% include header.html %}
 	{% include navigator.html %}
 
-<div id = "content" class="beigeBG">
+<div id = "content">
 
 		<div class = "wrap80">
 
@@ -25,7 +25,9 @@
 			</div>
 
 			<div class="contactme" > 
-				<img src="{{site.baseurl}}{{site.data.path.icons}}mail.svg">
+				<a href="mailto:russell.reventar@gmail.com?&body=Hello!">
+					<img src="{{site.baseurl}}{{site.data.path.icons}}mail.svg">
+				</a>
 			</div>
 		<div class="quote"><span>"</span>{{page.quote}}<span>"</span></div>
 
