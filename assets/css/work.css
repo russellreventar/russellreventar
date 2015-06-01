@@ -64,7 +64,7 @@
 		color:#F2F1ED;
 		pointer-events: none;
 		position:absolute;
-		font-size: 20px;
+		font-size: 14px;
 		-webkit-transition: all 0.2s ease;
 		-moz-transition: all 0.2s ease;
 		-o-transition: all 0.2s ease;
@@ -72,7 +72,7 @@
 		opacity: 0;
 	}
 	.worktile:hover > .overlay h1{
-		font-size: 22px;
+		font-size: 19px;
 	}
 	.worktile:hover > .overlay{
 		opacity: 1;
