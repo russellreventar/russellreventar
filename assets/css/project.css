@@ -355,6 +355,10 @@ blockquote{
 	margin: auto auto;
 }
 
+.leftarrow{
+	width: 30px;
+	height: 30px;
+}
 .clickzone{
 	width: 100%;
 	cursor: pointer;

@@ -84,6 +84,7 @@
 				{% for ss in page.screenshots %}
 					<img src="{{site.baseurl}}{{site.data.path.projects}}{{page.name}}/{{ss.filename}}"/>
 				{% endfor %}
+				<div class="leftarrow"><img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg"></div>
 				<div class="clickzone"></div>
 				<div class="slider">
 					{% for ss in page.screenshots %}
@@ -102,21 +103,21 @@
 			<div class="prenex-nav">
 					{% if page.previous and page.next %}
 						
-						<a href="{{site.baseurl}}{{page.previous.url}}">
-						<div class="prevProj half" style="background-color: #{{page.previous.color}};">
+						<a href="{{site.baseurl}}{{page.next.url}}">
+						<div class="prevProj half" style="background-color: #{{page.next.color}};">
 							<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
 							<div class="pv-text-l">
 								<h1>Previous</h1>
-								<h2>{{page.previous.title}}</h2>
+								<h2>{{page.next.title}}</h2>
 							</div>
 						</div>
 						</a>
 						
-						<a href="{{site.baseurl}}{{page.next.url}}">
-						<div class="nextProj half" style="background-color: #{{page.next.color}};">
+						<a href="{{site.baseurl}}{{page.previous.url}}">
+						<div class="nextProj half" style="background-color: #{{page.previous.color}};">
 							<div class="pv-text-r">
 								<h1>Next</h1>
-								<h2>{{page.next.title}}</h2>
+								<h2>{{page.previous.title}}</h2>
 							</div>
 							<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
 						</div>
@@ -124,10 +125,10 @@
 
 					{% elsif page.previous %}
 						<a href="{{site.baseurl}}{{page.previous.url}}">
-						<div class="prevProj full" style="background-color: #{{page.previous.color}};">
-							<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
-							<div class="pv-text-l">
-								<h1>Previous</h1>
+						<div class="nextProj full" style="background-color: #{{page.previous.color}};">
+							<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
+							<div class="pv-text-r">
+								<h1>Next</h1>
 								<h2>{{page.previous.title}}</h2>
 							</div>
 						</div>
@@ -135,11 +136,11 @@
 					{% elsif page.next %}
 						<a href="{{site.baseurl}}{{page.next.url}}">
 						<div class="nextProj full" style="background-color: #{{page.next.color}};">
-							<div class="pv-text-r">
-								<h1>Next</h1>
+							<div class="pv-text-l">
+								<h1>Previous</h1>
 								<h2>{{page.next.title}}</h2>
 							</div>
-							<img class="r-arrow"src="{{site.baseurl}}{{site.data.path.icons}}rightarrow.svg">
+							<img class="l-arrow"src="{{site.baseurl}}{{site.data.path.icons}}leftarrow.svg">
 						</div>
 						</a>
 					{% endif %}
