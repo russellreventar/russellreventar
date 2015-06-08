@@ -357,6 +357,11 @@ blockquote{
 
 .leftarrow{
 	width: 30px;
+	height: 100%;
+	float: left;
+}
+.leftarrow img{
+	width: 30px;
 	height: 30px;
 }
 .clickzone{
