@@ -70,7 +70,7 @@ function ThreeSixtyPlayer() {
   showHMSTime: true,
 
   useWaveformData: true,
-  waveformDataColor: '#FFFFFF',
+  waveformDataColor: '#2D2D2D',
   waveformDataDownsample: 3,
   waveformDataOutside: false,
   waveformDataConstrain: false,

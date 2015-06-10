@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }}</title>
+	{% include head.html %}
+	<script src = "{{site.baseurl}}{{site.data.path.js}}work.js"></script>
+	<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}work.css" >
+</head>
+<body style="background-color: #{{page.color}};">
+	<div id="wrapper">
+		{% include header.html %}
+		{% include navigator.html %}
+		<div id="content">
+			{{content}}
+			<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="{{site.baseurl}}{{site.data.path.css}}videos.css">
+			<div class = "wrap">
+				<div class="title">
+					• Videos • 
+				</div>
+				<div class = "summary">
+						<p> Capturing moments, editing footage, animating motion graphics. It's all part of the process of creating a visual experience for the viewer. 
+						</p>
+				</div>
+				{% for vids in page.videos %}
+				<div class = "item">
+					<div class = "description">
+						<h1> {{vids.title}} </h1>
+						<span id="quote"> {{vids.subtitle}} </span>
+						<span id="date"> {{vids.date}} </span>
+					</div>
+					
+					<div class = "player">
+						<iframe src="{{vids.link}}?rel=0;modestbranding=1;fs=1;autohide=1&amp;showinfo=0&amp;controls=0rel=0&showinfo=0&theme=light&color=white" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+</html>

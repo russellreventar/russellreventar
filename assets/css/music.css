@@ -1,7 +1,7 @@
 .soon{
 	height: 50px;
 	padding-top:30px;
-	color: white;
+	color: black;
 	font-family:  'Nothing You Could Do', cursive;
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -9,13 +9,13 @@
 	text-align: center;
 }
 .sample{
-	color: white;
+	color: black;
 	font-family: Futura;
 	font-size: 14px;
 	letter-spacing: 1px;
 	width: 100%;
 	text-align: center;
-	margin-top: 160px;
+	margin-top: 175px;
 	text-transform: uppercase;
 	position: absolute;
 	z-index: 2;
@@ -32,6 +32,7 @@
 	right:0;left:0;
 	margin: auto auto;
 	z-index: 1;
+	margin-top: 20px;
 }
 .wrapmusic{
 	width: 100%;
