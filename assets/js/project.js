@@ -21,7 +21,6 @@ function init(){
 	changeImg();
 }
 function fullscreenImg(){
-	console.log("hello");
 	clearFullscreenImg();
 	$('.fullscreenImg').css("display","block");
 	$(".fullscreenImg img:nth-child("+ (currImgID) +")").css("display","block");
@@ -80,7 +79,6 @@ function changeImg(cycle){
 function sliderClicked(){
 	if(($(this).index() + 1) != currImgID){
 		nextImgID = $(this).index() + 1;
-		console.log("clicked" + $(this).index());
 		changeImg();
 	}
 }
