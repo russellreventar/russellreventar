@@ -8,29 +8,9 @@
 	src: url(../fonts/Andale-Mono.ttf);
 }
 @font-face{
-	font-family: FuturaBook;
-	src: url(../fonts/FuturaLT-Book.ttf);
-}
-@font-face{
-	font-family: FuturaHeavy;
-	src: url(../fonts/FuturaLT-Heavy.ttf);
-}
-
-@font-face{
-	font-family: FuturaLight;
-	src: url(../fonts/FuturaLT-Light.ttf);
-}
-
-@font-face{
 	font-family: FuturaLT;
 	src: url(../fonts/FuturaLT.ttf);
 }
-
-@font-face{
-	font-family: OptimaLight;
-	src: url(../fonts/OptimaNovaLT-Light.otf);
-}
-
 @font-face{
 	font-family: ProximaLight;
 	src: url(../fonts/ProximaNova-Light.otf);
@@ -266,12 +246,6 @@ h1,h2{
 		text-align: center;
 		bottom:10px;right:0;left:0;
 		position: absolute;	
-	}
-	#footer h2{
-		color: white;
-		font-family: optimaLight;
-		font-size:10px;
-		text-align: center;
 	}
 /* -----------  SIDE CLASSES  ----------- */
 #wrapper {

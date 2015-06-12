@@ -1,14 +1,4 @@
 $(document).ready(function(){
-
-	// $('#work').click(function(){
-	// 	window.location = "work";
-	// });
-	// $('#music').click(function(){
-	// 	window.location = "music";
-	// });
-	// $('#videos').click(function(){
-	// 	window.location = "videos";
-	// });
 	particlesJS("footer", {
 		particles: {
 			color: "#454545",
@@ -43,11 +33,6 @@ $(document).ready(function(){
 		},
 		retina_detect: true
 	});
-
-
-	
-
-	//when core is done loading load entries
 	var currSection = getSectionName();
 
 	if(currSection == "index" || currSection == "index.html"){
