@@ -1,4 +1,5 @@
 name: Russell Reventar
 markdown: redcarpet
 pygments: true
-baseurl: 
+url: http://russellreventar.com
+baseurl: ""
